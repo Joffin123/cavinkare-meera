@@ -1,0 +1,1686 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meera - Social Media Pitch</title>
+<link rel="stylesheet" href="deck.css">
+<style>
+/* ===== Slide-specific styles ===== */
+
+/* S01 - Cover */
+.s01 .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,4,6,.35) 0%,rgba(40,4,6,.12) 38%,transparent 55%)}
+.s01 .eyebrow{position:absolute;left:111px;top:139px;font-family:var(--sans);font-weight:400;font-size:19.5px;letter-spacing:.29em;white-space:nowrap}
+.s01 .title{position:absolute;left:122px;top:312px;font-family:var(--serif-display);font-weight:600;font-size:226px;line-height:1;color:var(--cream);letter-spacing:-.03em;
+  text-shadow:0 6px 30px rgba(30,0,0,.35)}
+.s01 .tag{position:absolute;left:130px;top:563px;font-family:var(--serif-text);font-size:41.8px;line-height:54px;color:var(--cream);letter-spacing:-.005em}
+
+/* S02 - The brief */
+.s02{--ink:#13362b;--wine:#7b1621;--goldtxt:#a3762a;--body:#4b433a}
+.s02 .eyebrow{position:absolute;left:166px;top:108px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.33em;white-space:nowrap}
+.s02 .eyebrow.shimmer{--gold:#a3762a;--gold-2:#e2b768}
+.s02 h2{position:absolute;left:163px;top:161px;font-family:var(--serif-display);font-weight:700;font-size:141px;line-height:119px;letter-spacing:-.06em;word-spacing:-.03em;font-variant-numeric:lining-nums;color:var(--ink);white-space:nowrap}
+.s02 .blk{position:absolute;width:678px}
+.s02 .blk h3{display:flex;align-items:center;gap:14px;font-family:var(--serif-display);font-weight:600;font-size:47px;letter-spacing:-.045em;color:var(--wine);line-height:1;white-space:nowrap}
+.s02 .blk.gold h3{color:var(--goldtxt)}
+.s02 .rule{flex:1;display:flex;align-items:center;gap:6px;margin-top:6px}
+.s02 .rule svg{width:32px;height:32px;flex:none;stroke:#a87a30;fill:none;stroke-width:1.6}
+.s02 .rule i{flex:1;height:1.5px;background:#b08436;transform-origin:left;transform:scaleX(0)}
+.slide.active .s02-x{}
+.s02.active .rule i{animation:draw 1.4s var(--ease-out) both;animation-delay:calc(var(--d) + .35s)}
+.s02.active .rule svg{animation:spinIn 1.4s var(--ease-out) both;animation-delay:calc(var(--d) + .2s)}
+@keyframes draw{to{transform:scaleX(1)}}
+@keyframes spinIn{from{opacity:0;transform:rotate(-120deg) scale(.4)}to{opacity:1;transform:none}}
+.s02 .blk p{margin-top:14px;font-family:var(--ui);font-size:25.1px;line-height:34.5px;color:var(--body)}
+.s02 .src{position:absolute;left:158px;top:990px;display:flex;align-items:center;gap:10px;font-family:var(--ui);font-size:17.5px;color:#6d6154;white-space:nowrap}
+.s02 .src b{font-weight:400;color:#3a322b}
+.s02 .src .rule{flex:none;width:170px;margin:0 0 0 10px}
+.s02 .src .rule svg{width:18px;height:18px;order:2}
+
+/* S03 - Section 01 divider */
+.s03 .num{position:absolute;left:150px;top:282px;font-family:var(--serif-display);font-weight:600;font-size:140px;line-height:1;color:#c8913a;letter-spacing:-.02em}
+.s03 h2{position:absolute;left:150px;top:443px;font-family:var(--serif-display);font-weight:600;font-size:118px;line-height:1.1;color:#f6ede0;letter-spacing:-.022em;white-space:nowrap;text-shadow:0 4px 24px rgba(0,0,0,.25)}
+.s03 .sub{position:absolute;left:153px;top:613px;font-family:var(--ui);font-size:32.5px;line-height:48px;color:rgba(240,234,222,.88);letter-spacing:.02em;white-space:nowrap}
+.s03 .gline{position:absolute;left:153px;top:432px;width:120px;--c:#c8913a}
+
+/* S04 - Meera today */
+.s04{--ink:#14261d;--goldtxt:#a8751f;--body:#4a4038}
+.s04 .eyebrow{position:absolute;left:123px;top:136px;display:flex;align-items:center;gap:22px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.17em;color:#b0782a;white-space:nowrap}
+.s04 .eyebrow .hr{width:150px}
+.s04 h2{position:absolute;left:120px;top:206px;font-family:var(--serif-display);font-weight:600;font-size:73px;line-height:1.1;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+.s04 .stat{position:absolute;top:357px;width:380px}
+.s04 .stat .n{display:block;font-family:var(--serif-display);font-weight:600;font-size:114px;line-height:1;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:lining-nums tabular-nums}
+.s04 .stat.gold .n{color:var(--goldtxt)}
+.s04 .stat p{margin-top:-7px;font-family:"Open Sans",var(--ui);font-size:25px;line-height:33px;color:var(--body)}
+.s04 .vr{top:367px;height:176px}
+.s04 h3{position:absolute;top:642px;display:flex;align-items:center;gap:16px;font-family:var(--serif-display);font-weight:600;font-size:50px;line-height:1.1;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+.s04 h3 .hr{flex:1;margin-top:6px}
+.s04 .bul{position:absolute;top:721px;font-family:"Open Sans",var(--ui);font-size:25px;line-height:42px;color:var(--body)}
+.s04 .bul li{margin-bottom:2px}
+
+/* S05 - Portfolio and priority (table) */
+.s05{--ink:#163628;--goldtxt:#a8701e}
+.s05 .eyebrow{position:absolute;left:126px;top:113px;display:flex;align-items:center;gap:22px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.17em;color:#b0782a;white-space:nowrap}
+.s05 .eyebrow .hr{width:225px}
+.s05 h2{position:absolute;left:127px;top:176px;font-family:var(--serif-display);font-weight:600;font-size:89px;line-height:91px;letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
+.s05 .tbl{position:absolute;left:239px;top:404px;width:1441px;border-collapse:separate;border-spacing:0;font-family:var(--serif-text);font-size:24.5px;color:#1d2a22;
+  box-shadow:0 18px 50px -20px rgba(90,60,20,.25)}
+.s05 .tbl th,.s05 .tbl td{text-align:left;padding:0 0 0 34px;white-space:nowrap;position:relative}
+.s05 .tbl th{height:62px;background:#0f3b29;color:#f3ead8;font-weight:400;font-size:26px}
+.s05 .tbl th:first-child{border-top-left-radius:10px} .s05 .tbl th:last-child{border-top-right-radius:4px}
+.s05 .tbl td{height:62.5px;background:rgba(250,244,231,.94);border-bottom:1px solid #e0d1b2}
+.s05 .tbl tr:nth-child(even) td{background:rgba(244,236,219,.94)}
+.s05 .tbl tr:last-child td{height:67px}
+.s05 .tbl td:first-child{border-left:1px solid #e0d1b2} .s05 .tbl td:last-child{border-right:1px solid #e0d1b2}
+.s05 .tbl td+td,.s05 .tbl th+th{border-left:1px solid #d6c39d}
+.s05 .tbl th+th{border-left-color:#2c5a45}
+.s05 .tbl col.c1{width:407px} .s05 .tbl col.c2{width:552px}
+.s05 .tbl td.hero{color:var(--goldtxt)}
+/* tiny gold diamonds on grid intersections */
+.s05 .tbl td+td::before{content:"";position:absolute;left:-4px;top:-4px;width:7px;height:7px;background:#b98a3e;transform:rotate(45deg) scale(0)}
+.s05 .tbl tr:first-child td+td::before{display:none}
+/* row cascade */
+.s05 .tbl thead tr{opacity:0;transform-origin:top}
+.s05 .tbl tbody tr{opacity:0}
+.s05.active .tbl thead tr{animation:headIn 1s var(--ease-out) var(--d) both}
+.s05.active .tbl tbody tr{animation:rowIn 1s var(--ease-out) both;animation-delay:calc(var(--d) + .45s + var(--i) * 140ms)}
+.s05.active .tbl td+td::before{animation:pop .6s var(--ease-out) both;animation-delay:calc(var(--d) + 1s + var(--i) * 140ms)}
+.s05.active .tbl td.hero{animation:heroGlow 1.6s ease-out both;animation-delay:calc(var(--d) + 2.2s + var(--i) * 220ms)}
+@keyframes headIn{from{opacity:0;transform:scaleY(.2)}to{opacity:1;transform:none}}
+@keyframes rowIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes heroGlow{0%{text-shadow:none}35%{text-shadow:0 0 18px rgba(214,160,60,.75);color:#c98a25}100%{text-shadow:none}}
+.s05 .foot{position:absolute;left:419px;top:917px;width:1081px;display:flex;align-items:center;gap:12px;--c:#b98a3e}
+.s05 .foot .hr{flex:1}
+.s05 .foot .hr b{transform-origin:right}
+.s05 .foot .hr.r b{transform-origin:left}
+.s05 .foot .orn{width:34px;height:34px}
+.s05 .note{position:absolute;left:0;right:0;top:962px;text-align:center;font-family:var(--ui);font-size:19.5px;color:#7a6e60}
+
+/* S06 - Why 18–34 under-indexes */
+.s06{--ink:#14261d;--goldtxt:#8f6421;--body:#4a4038;--line:#c9a463}
+.s06 .curve{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none;overflow:visible}
+.s06 .curve path{fill:none;stroke:#c4974c;stroke-width:2;stroke-dasharray:1400;stroke-dashoffset:1400}
+.s06.active .curve path{animation:dash 3.2s var(--ease-cine) .2s forwards}
+@keyframes dash{to{stroke-dashoffset:0}}
+.star{position:absolute;width:var(--s,30px);height:var(--s,30px);margin:calc(var(--s,30px)/-2) 0 0 calc(var(--s,30px)/-2);opacity:0}
+.star svg{width:100%;height:100%;fill:var(--c,#b8873a);display:block}
+.slide.active .star{animation:starIn 1s var(--ease-out) var(--d,0s) both, twinkle 3.5s ease-in-out calc(var(--d,0s) + 1s) infinite}
+@keyframes starIn{from{opacity:0;transform:scale(0) rotate(-90deg)}to{opacity:1;transform:none}}
+@keyframes twinkle{0%,100%{transform:scale(1);filter:none}50%{transform:scale(1.22);filter:drop-shadow(0 0 6px rgba(230,180,90,.8))}}
+.s06 .eyebrow{position:absolute;left:125px;top:184px;font-family:var(--sans);font-weight:500;font-size:24.5px;letter-spacing:.115em;color:#9a6b22;white-space:nowrap}
+.s06 .lrule{position:absolute;left:125px;top:244px;width:178px;--c:#b8873a}
+.s06 h2{position:absolute;left:124px;top:262px;font-family:var(--serif-display);font-weight:500;font-size:117px;line-height:99.5px;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+.s06 .card{position:absolute;width:520px}
+.s06 .ic{position:absolute;left:0;top:0;width:128px;height:128px;border-radius:50%;background:var(--bgc);display:grid;place-items:center;transform:scale(0)}
+.s06 .ic svg{width:74px;height:74px;fill:none;stroke:var(--icc);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.s06 .ic svg *{stroke-dasharray:200;stroke-dashoffset:200}
+.s06 .ic::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--bgc);opacity:0}
+.s06.active .ic{animation:icPop 1s var(--ease-out) var(--d) both}
+.s06.active .ic svg *{animation:dash 1.6s var(--ease-out) calc(var(--d) + .35s) forwards}
+.s06.active .ic::after{animation:ring 1.6s ease-out calc(var(--d) + .3s) both}
+@keyframes icPop{0%{transform:scale(0)}65%{transform:scale(1.08)}100%{transform:scale(1)}}
+@keyframes ring{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.6)}}
+.s06 .no{position:absolute;left:149px;top:4px;font-family:var(--serif-display);font-weight:500;font-size:66px;line-height:1;color:#9a6b22;font-variant-numeric:lining-nums}
+.s06 .dash{position:absolute;left:153px;top:96px;width:26px;height:2px;background:#b8873a;transform:scaleX(0);transform-origin:left}
+.s06.active .dash{animation:draw .8s var(--ease-out) calc(var(--d) + .5s) both}
+.s06 h3{position:absolute;left:10px;top:136px;font-family:var(--serif-display);font-weight:500;font-size:47px;line-height:45px;letter-spacing:-.03em;color:var(--goldtxt);white-space:nowrap}
+.s06 .card p{position:absolute;left:10px;font-family:var(--ui);font-size:26.5px;line-height:36px;color:var(--body);white-space:nowrap}
+.s06 .vline{position:absolute;left:1246px;width:1.5px;background:var(--line);transform:scaleY(0)}
+.s06 .hline{position:absolute;top:542px;height:1.5px;background:var(--line);transform:scaleX(0)}
+.s06.active .vline,.s06.active .hline{animation:grow 1.6s var(--ease-out) var(--d) forwards}
+@keyframes grow{to{transform:none}}
+
+/* S07 - The audience, in three parts */
+.s07{--ink:#13261d;--goldtxt:#8a5d17;--body:#4f4940;background:#f5ecdc}
+.s07 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s07 .eyebrow{position:absolute;left:115px;top:80px;font-family:var(--sans);font-weight:500;font-size:23px;letter-spacing:.2em;color:#8f6418;white-space:nowrap}
+.s07 h2{position:absolute;left:123px;top:135px;font-family:var(--serif-display);font-weight:500;font-size:97px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap;font-variant-numeric:lining-nums}
+.s07 .arch{position:absolute;top:261px;height:301px}
+.s07 .arch .ph{position:absolute;inset:0;border-radius:999px 999px 0 0;overflow:hidden;clip-path:inset(100% 0 0 0)}
+.s07 .arch .ph i{position:absolute;inset:0;background-size:cover;background-position:center}
+.s07 .arch svg{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);overflow:visible}
+.s07 .arch svg path{fill:none;stroke:#b89353;stroke-width:1.6;stroke-dasharray:1000;stroke-dashoffset:1000}
+.s07.active .arch .ph{animation:archUp 1.6s var(--ease-out) var(--d) forwards}
+.s07.active .arch .ph i{animation:phZoom 9s ease-out var(--d) both}
+.s07.active .arch svg path{animation:dash 2s var(--ease-cine) calc(var(--d) + .2s) forwards}
+@keyframes archUp{to{clip-path:inset(0 0 0 0)}}
+@keyframes phZoom{from{transform:scale(1.18) translateY(14px)}to{transform:scale(1.03)}}
+.s07 .col{position:absolute;top:575px;width:540px}
+.s07 .age{font-family:var(--serif-text);font-size:25px;line-height:32px;color:var(--goldtxt)}
+.s07 h3{margin-top:12px;font-family:var(--serif-display);font-weight:600;font-size:44.5px;line-height:1.05;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.s07 .col p.b{margin-top:12px;font-family:var(--serif-text);font-size:25px;line-height:33.7px;color:var(--body);white-space:nowrap;letter-spacing:0}
+.s07 .mini{position:absolute;top:261px;left:0;width:72px;height:1.5px;background:#c3a46e;transform:scaleX(0);transform-origin:left}
+.s07.active .mini{animation:draw .9s var(--ease-out) calc(var(--d) + .9s) both}
+.s07 .job{position:absolute;top:290px;left:0;display:flex;align-items:center;gap:28px}
+.s07 .job .ic{width:99px;height:99px;border-radius:50%;background:var(--bgc);display:grid;place-items:center;flex:none;transform:scale(0)}
+.s07 .job .ic svg{width:54px;height:54px;fill:none;stroke:#3c2a20;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.s07 .job .ic svg *{stroke-dasharray:200;stroke-dashoffset:200}
+.s07.active .job .ic{animation:icPop .9s var(--ease-out) calc(var(--d) + 1s) both}
+.s07.active .job .ic svg *{animation:dash 1.5s var(--ease-out) calc(var(--d) + 1.3s) forwards}
+.s07 .job p{font-family:var(--serif-text);font-size:23.5px;line-height:32px;color:var(--goldtxt);white-space:nowrap}
+.s07 .job b{font-weight:700;color:#6f4810}
+.s07 .vline{position:absolute;top:330px;height:635px;width:1.5px;background:#d8c39b;transform:scaleY(0);transform-origin:top}
+.s07.active .vline{animation:grow 1.8s var(--ease-out) var(--d) forwards}
+.s07 .note{position:absolute;left:115px;top:1004px;font-family:var(--serif-text);font-size:20.5px;color:#6a6058;white-space:nowrap}
+
+/* S08 - Branding audit */
+.s08{--ink:#14281e;--body:#3f3a33;background:#f5ecdc}
+.s08 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s08 .eyebrow{position:absolute;left:135px;top:92px;display:flex;align-items:center;gap:20px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.17em;color:#9a6b22;white-space:nowrap}
+.s08 .eyebrow .hr{width:190px;--c:#b98a3e}
+.s08 h2{position:absolute;left:134px;top:146px;font-family:var(--serif-display);font-weight:500;font-size:82px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s08 .pill{position:absolute;top:281px;height:60px;padding:0 32px;border-radius:30px;display:flex;align-items:center;font-family:var(--serif-text);font-weight:700;font-size:24px;letter-spacing:.14em;white-space:nowrap}
+.s08 .pill.g{left:142px;background:#dfe0cd;color:#1f3a28}
+.s08 .pill.r{left:1066px;background:#f0d5cb;color:#8e2a22}
+.slide.active .pill{animation:pillIn 1.1s var(--ease-out) var(--d) both}
+@keyframes pillIn{from{opacity:0;clip-path:inset(0 100% 0 0 round 30px)}to{opacity:1;clip-path:inset(0 0 0 0 round 30px)}}
+.s08 .rw{position:absolute;height:108px;display:flex;align-items:center;opacity:0}
+.s08 .rw .ic{width:94px;height:94px;border-radius:50%;background:var(--bgc);display:grid;place-items:center;flex:none;transform:scale(0)}
+.s08 .rw .ic svg{width:50px;height:50px;fill:none;stroke:var(--icc);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.s08 .rw .ic svg *{stroke-dasharray:220;stroke-dashoffset:220}
+.s08 .rw .tick{width:1.5px;height:62px;background:#e1d2b6;margin:0 40px 0 48px;flex:none}
+.s08 .rw p{font-family:var(--serif-text);font-size:25.5px;line-height:36px;color:var(--body);white-space:nowrap}
+.s08 .rw .sep{position:absolute;bottom:0;height:1.5px;background:#e3d6bd;transform:scaleX(0);transform-origin:left}
+.s08.active .rw{animation:var(--anim,slideIn) 1s var(--ease-out) var(--d) both}
+.s08.active .rw .ic{animation:icPop .8s var(--ease-out) calc(var(--d) + .15s) both}
+.s08.active .rw .ic svg *{animation:dash 1.4s var(--ease-out) calc(var(--d) + .4s) forwards}
+.s08.active .rw .sep{animation:draw 1.1s var(--ease-out) calc(var(--d) + .3s) both}
+@keyframes slideInR{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.s08 .cline{position:absolute;left:970px;width:1.5px;background:#c9a463;transform:scaleY(0)}
+.s08.active .cline{animation:grow 1.6s var(--ease-out) var(--d) forwards}
+.s08 .cbox{position:absolute;left:99px;top:918px;width:1725px;height:113px;border-radius:10px;background:rgba(214,218,196,.62);clip-path:inset(0 100% 0 0 round 10px)}
+.s08.active .cbox{animation:boxIn 1.4s var(--ease-cine) var(--d) forwards}
+@keyframes boxIn{to{clip-path:inset(0 0 0 0 round 10px)}}
+.s08 .cbar{position:absolute;left:138px;top:939px;width:5px;height:71px;background:#b8862f;transform:scaleY(0)}
+.s08.active .cbar{animation:grow .9s var(--ease-out) calc(var(--d) + .6s) forwards}
+.s08 .bulb{position:absolute;left:184px;top:944px;width:54px;height:62px;opacity:0}
+.s08 .bulb svg{width:100%;height:100%;fill:none;stroke:#b8862f;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.s08.active .bulb{animation:fade .6s ease calc(var(--d) + .7s) both, glow 2.6s ease-in-out calc(var(--d) + 1.4s) infinite}
+@keyframes glow{0%,100%{filter:none}50%{filter:drop-shadow(0 0 10px rgba(240,190,80,.95))}}
+.s08 .ctick{position:absolute;left:276px;top:946px;width:1.5px;height:58px;background:#cfc7ab;opacity:0}
+.s08.active .ctick{animation:fade .6s ease calc(var(--d) + .8s) both}
+.s08 .c1{position:absolute;left:307px;top:930px;font-family:var(--serif-text);font-size:39.5px;line-height:1.2;color:var(--ink);white-space:nowrap}
+.s08 .c1 em{font-style:italic;font-weight:700;color:#a8711e}
+.s08 .c2{position:absolute;left:308px;top:984px;font-family:var(--serif-text);font-size:22.5px;color:#57504a;white-space:nowrap}
+
+/* S09 - Keep / change / add */
+.s09{--ink:#14281e;background:#f5ecdc}
+.s09 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s09 .eyebrow{position:absolute;left:132px;top:101px;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.15em;color:#9a6b22;white-space:nowrap}
+.s09 h2{position:absolute;left:129px;top:156px;font-family:var(--serif-display);font-weight:500;font-size:81px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s09 .card{position:absolute;top:274px;height:717px;border-radius:18px;background:linear-gradient(180deg,#fbf6ee,#f7efe2);border:1.5px solid #ecdfca;overflow:hidden;
+  box-shadow:0 20px 40px -28px rgba(90,60,20,.35);opacity:0;transition:transform .5s var(--ease-out),box-shadow .5s}
+.s09.active .card{animation:cardUp 1.2s var(--ease-out) var(--d) both}
+@keyframes cardUp{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
+.s09 .ph{position:relative;height:301px;overflow:hidden;clip-path:inset(0 0 100% 0)}
+.s09 .ph i{position:absolute;inset:0;background-size:cover;background-position:center}
+.s09 .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,235,200,.45) 50%,transparent 65%);background-size:260% 100%;background-position:130% 0}
+.s09.active .ph{animation:phDown 1.4s var(--ease-cine) calc(var(--d) + .25s) forwards}
+.s09.active .ph i{animation:phZoom 10s ease-out calc(var(--d) + .25s) both}
+.s09.active .ph::after{animation:sheen 2.4s var(--ease-cine) calc(var(--d) + 1.4s) both}
+@keyframes phDown{to{clip-path:inset(0 0 0 0)}}
+@keyframes sheen{to{background-position:-40% 0}}
+.s09 h3{position:absolute;top:328px;font-family:var(--serif-display);font-weight:600;font-size:40px;line-height:1.1;letter-spacing:-.03em;white-space:nowrap}
+.s09 .bul{position:absolute;top:390px;font-family:"Open Sans",var(--ui);font-size:23px;line-height:31px;color:#4a4540;white-space:nowrap}
+.s09 .bul li{margin-bottom:6.5px}
+.s09 .bul.tight{line-height:29.5px} .s09 .bul.tight li{margin-bottom:3.5px}
+.s09 .bul li::before{left:-26px;top:.55em;width:7px;height:7px}
+.s09 .foot{position:absolute;left:113px;top:1016px;font-family:var(--ui);font-size:19.5px;color:#8a8076;white-space:nowrap}
+
+/* S10 - Positioning ladder */
+.s10{--ink:#14281e;--goldtxt:#a8701e;--body:#4d463d}
+.s10 .eyebrow{position:absolute;left:117px;top:79px;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.16em;color:#9a6b22;white-space:nowrap}
+.s10 h2{position:absolute;left:116px;top:126px;font-family:var(--serif-display);font-weight:500;font-size:86px;line-height:87px;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s10 h2 em{font-family:var(--serif-text);font-style:italic;font-weight:400;font-size:74px;letter-spacing:-.02em}
+.s10 .conn{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none}
+.s10 .conn path{fill:none;stroke:#b07f30;stroke-width:2.2;stroke-dasharray:700;stroke-dashoffset:700}
+.s10 .conn circle{fill:#a8701e;transform-box:fill-box;transform-origin:center;transform:scale(0)}
+.s10.active .conn path{animation:dash 1.8s var(--ease-cine) var(--d) forwards}
+.s10.active .conn circle{animation:pop .6s var(--ease-out) var(--d) both}
+.s10 .rung{position:absolute;opacity:1}
+.s10 .rung .no{font-family:var(--serif-display);font-weight:500;font-size:88px;line-height:1;color:#a8701e;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.s10 .rung .lbl{font-family:var(--sans);font-weight:500;font-size:25px;line-height:37px;letter-spacing:.14em;color:#a8701e;white-space:nowrap}
+.s10 .rung p.d{font-family:var(--serif-text);font-size:24px;line-height:33px;color:var(--body);white-space:nowrap}
+.s10 .rung .ln{height:1.5px;background:#d6c6a6;transform:scaleX(0);transform-origin:left}
+.s10.active .rung .ln{animation:draw 1s var(--ease-out) calc(var(--d) + .6s) both}
+.s10 .rung .br{font-family:var(--ui);font-weight:500;font-size:23.5px;line-height:34px;color:#1b2a21;white-space:nowrap}
+.s10 .rung .br .me{color:#a8701e}
+.s10 .box{position:absolute;left:62px;top:871px;width:1786px;height:130px;border-radius:9px;background:#e8e3d6;clip-path:inset(0 100% 0 0 round 9px)}
+.s10.active .box{animation:boxIn 1.4s var(--ease-cine) var(--d) forwards}
+.s10 .climb{position:absolute;left:134px;top:896px;width:72px;height:76px}
+.s10 .climb svg{width:100%;height:100%;fill:none;stroke:#a8701e;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.s10 .climb svg *{stroke-dasharray:120;stroke-dashoffset:120}
+.s10.active .climb svg *{animation:dash 1.2s var(--ease-out) calc(var(--d) + .6s) forwards}
+.s10 .btick{position:absolute;left:250px;top:891px;width:1.5px;height:84px;background:#cfc6b0;opacity:0}
+.s10.active .btick{animation:fade .6s ease calc(var(--d) + .8s) both}
+.s10 .m1{position:absolute;left:290px;top:896px;font-family:var(--serif-text);font-size:30px;line-height:40px;color:#1e2b23;white-space:nowrap}
+.s10 .m1 b{color:var(--ink)} .s10 .m1 i{font-style:italic}
+.s10 .r3 .no{font-size:76px;margin-top:6px}
+.s10 .r3 p.d{font-size:22.5px;line-height:31px;margin-top:6px}
+.s10 .foot{position:absolute;left:113px;top:1015px;font-family:var(--ui);font-size:21px;color:#7c7268;white-space:nowrap}
+
+/* S12 - Competitive map */
+.s12{--ink:#14281e}
+.s12 .eyebrow{position:absolute;left:104px;top:106px;font-family:var(--sans);font-weight:500;font-size:24px;letter-spacing:.15em;color:#9a6b22;white-space:nowrap}
+.s12 h2{position:absolute;left:101px;top:156px;font-family:var(--serif-display);font-weight:500;font-size:70px;line-height:1.1;letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
+.s12 .map{position:absolute;left:100px;top:277px;width:1727px;height:617px;border:1.5px solid #e6dac4;border-radius:14px;background:rgba(251,246,237,.72);opacity:0}
+.s12.active .map{animation:fade 1s ease var(--d) both}
+.s12 .axes{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none;overflow:visible}
+.s12 .axes line{stroke:#a8772c;stroke-width:1.6;stroke-dasharray:900;stroke-dashoffset:900}
+.s12 .axes path.hd{fill:#a8772c;opacity:0}
+.s12.active .axes line{animation:dash 1.6s var(--ease-out) var(--d) forwards}
+.s12.active .axes path.hd{animation:fade .4s ease calc(var(--d) + 1.1s) forwards}
+.s12 .axes path.trip{fill:none;stroke:#b8862f;stroke-width:2.2;stroke-dasharray:6 9;opacity:0}
+.s12.active .axes path.trip{animation:fade .3s ease var(--d) forwards, march 1.2s linear var(--d) infinite}
+@keyframes march{to{stroke-dashoffset:-30}}
+.s12 .ax{position:absolute;font-family:var(--ui);font-size:23px;color:#8b8279;white-space:nowrap;transform:translateX(-50%)}
+.s12 .end{position:absolute;top:913px;font-family:var(--ui);font-weight:500;font-size:25px;color:var(--ink);white-space:nowrap}
+.s12 .pill{position:absolute;height:64px;border-radius:32px;background:#efe5d4;display:grid;place-items:center;font-family:var(--ui);font-size:24.5px;color:#1e2a22;white-space:nowrap;
+  box-shadow:0 6px 16px -10px rgba(90,60,20,.35);transform:scale(0);opacity:0}
+.s12.active .pill{animation:pillPop .8s var(--ease-out) var(--d) both}
+@keyframes pillPop{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+.s12 .pill.today{background:#173a2b;color:#fff;font-weight:500;box-shadow:0 10px 24px -10px rgba(10,40,25,.6)}
+.s12 .pill.goal{background:linear-gradient(135deg,#c08a35,#9c6a22);color:#fff;font-weight:500;box-shadow:0 12px 28px -10px rgba(150,95,25,.65)}
+.s12.active .pill.goal{animation:pillPop .9s var(--ease-out) var(--d) both, goalGlow 2.6s ease-in-out calc(var(--d) + 1s) infinite}
+@keyframes goalGlow{0%,100%{box-shadow:0 12px 28px -10px rgba(150,95,25,.65),0 0 0 0 rgba(200,140,50,.45)}50%{box-shadow:0 12px 28px -10px rgba(150,95,25,.65),0 0 0 16px rgba(200,140,50,0)}}
+
+/* S13 - Shampoo competitor table */
+.s13{--ink:#14281e}
+.s13 .eyebrow{position:absolute;left:90px;top:111px;font-family:var(--sans);font-weight:500;font-size:23.5px;letter-spacing:.2em;color:#9a6b22;white-space:nowrap}
+.s13 h2{position:absolute;left:88px;top:156px;font-family:var(--serif-display);font-weight:500;font-size:71px;line-height:1.1;letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
+.s13 .tbl{position:absolute;left:78px;top:277px;width:1766px;border-collapse:separate;border-spacing:0;font-family:var(--serif-text);font-size:22px;line-height:35px;color:#2a2f2a;letter-spacing:-.01em;
+  box-shadow:0 18px 50px -24px rgba(90,60,20,.3);border-radius:12px}
+.s13 .tbl col.c1{width:319px} .s13 .tbl col.c2{width:455px} .s13 .tbl col.c3{width:436px}
+.s13 .tbl th{height:68px;background:#173a2b;color:#f3ead8;font-weight:400;font-size:26.5px;text-align:left;padding:0 0 0 31px}
+.s13 .tbl th:first-child{border-top-left-radius:12px} .s13 .tbl th:last-child{border-top-right-radius:12px}
+.s13 .tbl th+th{border-left:1.5px solid #e7dcc6}
+.s13 .tbl td{height:118px;padding:0 8px 0 31px;white-space:nowrap;vertical-align:middle;background:rgba(252,248,240,.96);border-top:1.5px solid #e3d6bd;position:relative}
+.s13 .tbl tbody tr:nth-child(even) td{background:rgba(245,237,222,.96)}
+.s13 .tbl td+td{border-left:1.5px solid #e3d6bd}
+.s13 .tbl td:first-child{border-left:1.5px solid #e3d6bd;font-weight:700;color:#1c2620;font-size:22px}
+.s13 .tbl td:last-child{border-right:1.5px solid #e3d6bd;color:#97661b}
+.s13 .tbl tbody tr:last-child td{height:125px;border-bottom:1.5px solid #e3d6bd}
+.s13 .tbl tbody tr:last-child td:first-child{border-bottom-left-radius:12px} .s13 .tbl tbody tr:last-child td:last-child{border-bottom-right-radius:12px}
+.s13 .tbl td:last-child::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:4px;background:#c08a35;transform:scaleY(0);border-radius:2px}
+.s13 .tbl thead tr,.s13 .tbl tbody tr{opacity:0}
+.s13.active .tbl thead tr{animation:headIn 1s var(--ease-out) var(--d) both}
+.s13.active .tbl tbody tr{animation:rowIn 1s var(--ease-out) both;animation-delay:calc(var(--d) + .45s + var(--i) * 160ms)}
+.s13.active .tbl td:last-child::before{animation:grow .7s var(--ease-out) forwards;animation-delay:calc(var(--d) + 2.1s + var(--i) * 260ms)}
+.s13.active .tbl td:last-child{animation:heroGlow 1.6s ease-out both;animation-delay:calc(var(--d) + 2.1s + var(--i) * 260ms)}
+.s13 .note{position:absolute;left:90px;top:982px;font-family:var(--ui);font-size:23.5px;color:#5e6660;white-space:nowrap}
+.s13 .note b{font-weight:500;color:#2c4a38}
+
+/* S14 - Powder and oil */
+.s14{--ink:#14281e;background:#f5ecdc}
+.s14 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s14 .eyebrow{position:absolute;left:110px;top:111px;font-family:var(--sans);font-weight:500;font-size:23.5px;letter-spacing:.14em;color:#8f6418;white-space:nowrap}
+.s14 h2{position:absolute;left:107px;top:146px;font-family:var(--serif-display);font-weight:500;font-size:72px;line-height:1.1;letter-spacing:-.03em;color:#1a1d1a;white-space:nowrap}
+.s14 .ph{position:absolute;top:286px;height:619px;border-radius:0 250px 0 0;overflow:hidden;clip-path:inset(100% 0 0 0 round 0 250px 0 0)}
+.s14 .ph i{position:absolute;inset:0;background-size:cover;background-position:center}
+.s14.active .ph{animation:phUp 1.6s var(--ease-cine) var(--d) forwards}
+.s14.active .ph i{animation:phZoom 11s ease-out var(--d) both}
+@keyframes phUp{to{clip-path:inset(0 0 0 0 round 0 250px 0 0)}}
+.s14 .txt{position:absolute}
+.s14 .txt h3{font-family:var(--serif-display);font-weight:500;font-size:39px;line-height:51px;letter-spacing:-.02em;color:var(--ink)}
+.s14 .txt .gl{display:block;width:213px;height:1.5px;background:#e3c58a;margin:20px 0 23px;transform:scaleX(0);transform-origin:left}
+.s14.active .txt .gl{animation:draw 1s var(--ease-out) calc(var(--d) + .4s) both}
+.s14 .txt .k{font-family:var(--sans);font-weight:500;font-size:16px;letter-spacing:.2em;color:#8a5d17;margin-bottom:3px}
+.s14 .txt p{font-family:var(--sans);font-size:21.5px;line-height:27.6px;color:#4f4a44;white-space:nowrap;margin-bottom:var(--mb,40px)}
+.s14 .txt p i{font-style:italic}
+.s14 .vl{position:absolute;left:961px;top:255px;width:1.5px;height:681px;background:#e1d3b9;transform:scaleY(0);transform-origin:top}
+.s14.active .vl{animation:grow 1.6s var(--ease-out) var(--d) forwards}
+.s14 .hl{position:absolute;left:96px;top:976px;width:1733px;height:1.5px;background:#e3d6bd;transform:scaleX(0);transform-origin:left}
+.s14.active .hl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.s14 .foot{position:absolute;left:97px;top:992px;font-family:var(--sans);font-size:20.5px;color:#6a645c;white-space:nowrap}
+
+/* S15 - Competitors by behaviour */
+.s15{--ink:#14281e;background:#f5ecdc}
+.s15 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s15 .eyebrow{position:absolute;left:113px;top:111px;font-family:var(--sans);font-weight:500;font-size:23.5px;letter-spacing:.15em;color:#8f6418;white-space:nowrap}
+.s15 h2{position:absolute;left:112px;top:155px;font-family:var(--serif-display);font-weight:500;font-size:76px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap;font-variant-numeric:lining-nums}
+.s15 .frame{position:absolute;left:84px;top:272px;width:1751px;height:672px;border:1.5px solid #e6d6b8;border-radius:14px;background:rgba(250,245,235,.6);opacity:0}
+.s15.active .frame{animation:fade 1s ease var(--d) both}
+.s15 .tbl{position:absolute;left:93px;top:284px;width:1736px;border-collapse:separate;border-spacing:0;font-family:var(--ui);font-size:22.5px;line-height:34.5px;color:#2b302c}
+.s15 .tbl col.c1{width:272px} .s15 .tbl col.c2{width:505px} .s15 .tbl col.c3{width:457px}
+.s15 .tbl th{height:70px;background:#1d3a2c;color:#f3ead8;font-family:var(--serif-text);font-weight:700;font-size:23.5px;text-align:left;padding:0 0 0 28px}
+.s15 .tbl th:first-child{border-top-left-radius:12px} .s15 .tbl th:last-child{border-top-right-radius:12px}
+.s15 .tbl th+th{border-left:1.5px solid #e7dcc6}
+.s15 .tbl td{padding:0 10px 0 32px;vertical-align:top;padding-top:var(--pt,22px);background:rgba(253,250,244,.97);border-top:1.5px solid #e9dfcc;white-space:nowrap}
+.s15 .tbl tbody tr:nth-child(even) td{background:rgba(245,237,223,.97)}
+.s15 .tbl td+td{border-left:1.5px solid #e3d6bd}
+.s15 .tbl td:first-child{font-family:var(--serif-text);font-size:27px;color:#1c2620;padding-left:28px}
+.s15 .tbl tbody tr:last-child td:first-child{border-bottom-left-radius:12px} .s15 .tbl tbody tr:last-child td:last-child{border-bottom-right-radius:12px}
+.s15 .tbl thead tr,.s15 .tbl tbody tr{opacity:0}
+.s15.active .tbl thead tr{animation:headIn 1s var(--ease-out) var(--d) both}
+.s15.active .tbl tbody tr{animation:rowIn 1s var(--ease-out) both;animation-delay:calc(var(--d) + .45s + var(--i) * 170ms)}
+.s15.active .tbl td:first-child{animation:heroGlow 1.6s ease-out both;animation-delay:calc(var(--d) + 1.1s + var(--i) * 170ms)}
+.s15 .hl{position:absolute;left:89px;top:982px;width:1740px;height:1.5px;background:#e3d6bd;transform:scaleX(0);transform-origin:left}
+.s15.active .hl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.s15 .foot{position:absolute;left:108px;top:998px;font-family:var(--ui);font-size:21.5px;color:#8a837a;white-space:nowrap}
+
+/* S16 - Whitespace puzzle */
+.s16{--ink:#14281e;background:#f5ecdc}
+.s16 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s16 .eyebrow{position:absolute;left:122px;top:94px;font-family:var(--sans);font-weight:500;font-size:23px;letter-spacing:.15em;color:#8f6418;white-space:nowrap}
+.s16 h2{position:absolute;left:119px;top:128px;font-family:var(--serif-display);font-weight:500;font-size:86px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s16 .pz{position:absolute;opacity:0;filter:drop-shadow(0 14px 22px rgba(90,60,20,.0))}
+.s16 .clip{position:absolute;inset:0}
+.s16 .card{position:absolute;inset:0;background:#f8f1e5}
+.s16 .ph{position:absolute;left:40px;top:40px;width:396px;bottom:40px}
+.s16 .ph i{position:absolute;inset:0;background-size:113% 100%;background-position:left center}
+.s16 .edge{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.s16 .edge path{fill:none;stroke:#e6d8bf;stroke-width:1.6}
+.s16 .tx{position:absolute;z-index:2}
+.s16 .nrow{display:flex;align-items:center;gap:20px}
+.s16 .no{font-family:var(--serif-display);font-weight:500;font-size:52px;line-height:60px;color:#8f6418;font-variant-numeric:lining-nums}
+.s16 .nl{width:162px;height:1.5px;background:#a98447;transform:scaleX(0);transform-origin:left}
+.s16 h3{margin-top:6px;font-family:var(--serif-display);font-weight:500;font-size:38px;line-height:46px;letter-spacing:-.025em;color:var(--ink);white-space:nowrap}
+.s16 p{margin-top:16px;font-family:var(--ui);font-size:21.5px;line-height:28.8px;color:#5a544c;white-space:nowrap}
+.s16 .tx>*{opacity:0}
+/* puzzle fly-in */
+.s16.active .pz{animation:pzIn 1.5s cubic-bezier(.2,.9,.25,1) var(--d) both, pzShadow 1.5s ease var(--d) both}
+@keyframes pzIn{
+  0%{opacity:0;transform:translate(var(--fx),var(--fy)) rotate(var(--fr)) scale(.85)}
+  15%{opacity:1}
+  78%{transform:translate(calc(var(--fx) * -.012),calc(var(--fy) * -.012)) rotate(calc(var(--fr) * -.04)) scale(1.02)}
+  90%{transform:translate(0,0) rotate(0) scale(.992)}
+  100%{opacity:1;transform:none}}
+@keyframes pzShadow{0%,70%{filter:drop-shadow(0 30px 30px rgba(90,60,20,.35))}100%{filter:drop-shadow(0 8px 14px rgba(90,60,20,.12))}}
+.s16.active .tx>*{animation:fadeUp .9s var(--ease-out) both}
+.s16.active .tx .nrow{animation-delay:var(--d)}
+.s16.active .tx .nl{animation:draw .9s var(--ease-out) calc(var(--d) + .2s) both}
+.s16.active .tx h3{animation-delay:calc(var(--d) + .15s)}
+.s16.active .tx p{animation-delay:calc(var(--d) + .3s)}
+.s16 .snap{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none}
+.s16 .snap circle{fill:none;stroke:#d9a957;stroke-width:3;opacity:0;visibility:hidden;transform-box:fill-box;transform-origin:center}
+.s16.active .snap circle{animation:snap .9s ease-out var(--d) forwards}
+@keyframes snap{0%{opacity:.9;visibility:visible;transform:scale(.3)}100%{opacity:0;transform:scale(2.4)}}
+.s16 .hl{position:absolute;left:113px;top:974px;width:1701px;height:1.5px;background:#e3d6bd;transform:scaleX(0);transform-origin:left}
+.s16.active .hl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.s16 .foot{position:absolute;left:113px;top:994px;font-family:var(--ui);font-size:21.5px;color:#6a645c;white-space:nowrap}
+
+/* S18 - Grown on Meera */
+.s18{--ink:#14281e;background:#f5ecdc}
+.s18 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s18 .eyebrow{position:absolute;left:102px;top:94px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.17em;color:#8f6418;white-space:nowrap}
+.s18 h2{position:absolute;left:98px;top:122px;font-family:var(--serif-display);font-weight:700;font-size:136px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s18 .lead{position:absolute;left:102px;top:270px;font-family:var(--serif-text);font-size:35px;line-height:44px;letter-spacing:-.025em;color:#26302a;white-space:nowrap;letter-spacing:-.01em}
+.s18 .lead .w{display:inline-block;opacity:0;filter:blur(6px);transform:translateY(8px)}
+.s18.active .lead .w{animation:wIn .7s var(--ease-out) both;animation-delay:calc(var(--d) + var(--i) * 45ms)}
+@keyframes wIn{to{opacity:1;filter:none;transform:none}}
+.s18 .ph{position:absolute;top:441px;height:388px;border-radius:16px;overflow:hidden;box-shadow:0 20px 40px -26px rgba(90,60,20,.45);opacity:0;transform:translateY(50px) scale(.96)}
+.s18 .ph i{position:absolute;inset:0;background-size:cover;background-position:center}
+.s18 .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,235,200,.4) 50%,transparent 65%);background-size:260% 100%;background-position:130% 0}
+.s18.active .ph{animation:phRise 1.4s var(--ease-out) var(--d) forwards}
+.s18.active .ph i{animation:phZoom 12s ease-out var(--d) both}
+.s18.active .ph::after{animation:sheen 2.4s var(--ease-cine) calc(var(--d) + 1.1s) both}
+@keyframes phRise{to{opacity:1;transform:none}}
+.s18 .cap{position:absolute;top:858px;white-space:nowrap}
+.s18 .cap h3{font-family:var(--serif-text);font-weight:700;font-size:34px;line-height:44px;color:var(--ink);letter-spacing:-.01em}
+.s18 .cap p{margin-top:2px;font-family:var(--serif-text);font-size:26px;line-height:37px;color:#5a544c}
+
+/* S19 - Tone of voice */
+.s19{--ink:#14281e}
+.s19 .eyebrow{position:absolute;left:92px;top:124px;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.18em;color:#8f6418;white-space:nowrap}
+.s19 h2{position:absolute;left:89px;top:176px;font-family:var(--serif-display);font-weight:600;font-size:81px;line-height:1.1;letter-spacing:-.035em;color:#141a16;white-space:nowrap}
+.s19 .tbl{position:absolute;left:92px;top:310px;width:1736px;border-collapse:separate;border-spacing:0;font-family:var(--serif-text);font-size:26.5px;line-height:43px;box-shadow:0 18px 50px -24px rgba(90,60,20,.3);border-radius:12px}
+.s19 .tbl col.c1{width:749px}
+.s19 .tbl th{height:77px;background:#173a2b;color:#f3ead8;font-weight:700;font-size:28px;text-align:left;padding:0 0 0 30px}
+.s19 .tbl th:first-child{border-top-left-radius:12px} .s19 .tbl th:last-child{border-top-right-radius:12px}
+.s19 .tbl th+th{border-left:1.5px solid #e7dcc6}
+.s19 .tbl td{padding:0 20px 0 30px;background:rgba(253,250,244,.97);border-top:1.5px solid #e3d6bd;white-space:nowrap;position:relative}
+.s19 .tbl td:first-child{background:rgba(243,236,222,.97);color:#4f6a58;border-left:1.5px solid #e3d6bd}
+.s19 .tbl td:last-child{color:#1a1d1a;border-right:1.5px solid #e3d6bd;border-left:1.5px solid #e3d6bd}
+.s19 .tbl tbody tr:last-child td{border-bottom:1.5px solid #e3d6bd}
+.s19 .tbl tbody tr:last-child td:first-child{border-bottom-left-radius:12px} .s19 .tbl tbody tr:last-child td:last-child{border-bottom-right-radius:12px}
+.s19 .tbl thead tr{opacity:0}
+.s19 .tbl tbody td{opacity:0}
+.s19 .tbl td .tx{display:inline-block}
+.s19 .tbl td:last-child .tx{clip-path:inset(0 100% 0 0)}
+.s19 .tbl td:last-child::before{content:"";position:absolute;left:-14px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;background:#c08a35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12h11M13 7l5 5-5 5' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat;transform:scale(0);z-index:2}
+.s19.active .tbl thead tr{animation:headIn 1s var(--ease-out) var(--d) both}
+.s19.active .tbl td:first-child{animation:slideIn .9s var(--ease-out) both;animation-delay:calc(var(--d) + .4s + var(--i) * 700ms)}
+.s19.active .tbl td:last-child{animation:fade .4s ease both;animation-delay:calc(var(--d) + .7s + var(--i) * 700ms)}
+.s19.active .tbl td:last-child::before{animation:arrowPop 1.1s var(--ease-out) both;animation-delay:calc(var(--d) + .75s + var(--i) * 700ms)}
+.s19.active .tbl td:last-child .tx{animation:wipe 1s var(--ease-cine) both;animation-delay:calc(var(--d) + .95s + var(--i) * 700ms)}
+@keyframes wipe{to{clip-path:inset(0 0 0 0)}}
+@keyframes arrowPop{0%{transform:scale(0)}35%{transform:scale(1.2)}60%{transform:scale(1)}100%{transform:scale(0)}}
+.s19 .note{position:absolute;left:92px;top:957px;font-family:var(--ui);font-size:20.5px;line-height:27px;color:#857d74;white-space:nowrap}
+
+/* S20 - Five pillars */
+.s20{--ink:#14281e;background:#f5ecdc}
+.s20 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s20 .eyebrow{position:absolute;left:106px;top:76px;font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.2em;color:#8f6418;white-space:nowrap}
+.s20 h2{position:absolute;left:104px;top:120px;font-family:var(--serif-display);font-weight:500;font-size:81px;line-height:94px;letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
+.s20 .vl{position:absolute;left:1313px;top:110px;width:1.5px;height:226px;background:#c9a463;transform:scaleY(0);transform-origin:top}
+.s20.active .vl{animation:grow 1.2s var(--ease-out) var(--d) forwards}
+.s20 .bal{position:absolute;left:1383px;top:106px;white-space:nowrap}
+.s20 .bal .k{font-family:var(--sans);font-weight:500;font-size:20px;letter-spacing:.2em;color:#8f6418}
+.s20 .bal p{margin-top:12px;font-family:var(--serif-text);font-size:27.5px;line-height:37.5px;color:#1f2a23;letter-spacing:-.01em}
+.s20 .bal .q{margin-top:18px;font-family:var(--ui);font-size:21.5px;color:#9a6b22}
+.s20 .arch{position:absolute;top:366px;height:657px;border-radius:999px 999px 18px 18px;overflow:hidden;opacity:0;transform:translateY(120px);
+  box-shadow:0 22px 40px -28px rgba(90,60,20,.5)}
+.s20 .arch>i{position:absolute;inset:0;background-size:100% 100%}
+.s20.active .arch{animation:archRise 1.4s cubic-bezier(.2,.9,.25,1) var(--d) forwards}
+.s20.active .arch>i{animation:phZoom 12s ease-out var(--d) both;transform-origin:50% 100%}
+@keyframes archRise{0%{opacity:0;transform:translateY(120px)}60%{opacity:1}100%{opacity:1;transform:none}}
+.s20 .in{position:absolute;top:50px;white-space:nowrap}
+.s20 .pct{font-family:var(--serif-display);font-weight:600;font-size:66px;line-height:70px;color:#8f6418;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.s20 .pct small{font-size:38px;margin-left:2px}
+.s20 .lb{margin-top:6px;font-family:var(--sans);font-weight:500;font-size:16.5px;letter-spacing:.22em;color:#8f6418}
+.s20 h3{margin-top:10px;font-family:var(--serif-display);font-weight:500;font-size:35px;line-height:39px;letter-spacing:-.02em;color:var(--ink)}
+.s20 .bd{margin-top:14px;font-family:var(--ui);font-size:19.5px;line-height:27px;color:#4a453f}
+.s20 .ds{display:block;width:44px;height:1.5px;background:#b98a3e;margin:22px 0 14px;transform:scaleX(0);transform-origin:left}
+.s20.active .ds{animation:draw .8s var(--ease-out) calc(var(--d) + 1.5s) both}
+.s20 .fm{font-family:var(--ui);font-size:19.5px;line-height:27px;color:#9a6b22}
+.s20 .in>*:not(.ds){opacity:0}
+.s20.active .in>*:not(.ds){animation:fadeUp .9s var(--ease-out) both}
+.s20.active .in .pct{animation-delay:calc(var(--d) + .7s)} .s20.active .in .lb{animation-delay:calc(var(--d) + .9s)}
+.s20.active .in h3{animation-delay:calc(var(--d) + 1.05s)} .s20.active .in .bd{animation-delay:calc(var(--d) + 1.2s)}
+.s20.active .in .fm{animation-delay:calc(var(--d) + 1.6s)}
+
+/* S21 - Three hero products */
+.s21{--ink:#14281e;background:#f5ecdc}
+.s21 .paper{position:absolute;inset:0;background:radial-gradient(80% 70% at 50% 40%,#f7efe2 0%,#f5ecdd 55%,#efe2cd 100%)}
+.s21 .eyebrow{position:absolute;left:123px;top:46px;font-family:var(--sans);font-weight:500;font-size:23px;letter-spacing:.17em;color:#8f6418;white-space:nowrap}
+.s21 h2{position:absolute;z-index:3;left:122px;top:76px;font-family:var(--serif-display);font-weight:600;font-size:86px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s21 .btl{position:absolute;opacity:0;-webkit-mask:radial-gradient(closest-side,#000 72%,transparent 100%);mask:radial-gradient(closest-side,#000 72%,transparent 100%);
+  -webkit-mask-size:100% 112%;mask-size:100% 112%;-webkit-mask-position:center 30%;mask-position:center 30%}
+.s21 .btl i{position:absolute;inset:0;background-size:100% 100%}
+.s21.active .btl{animation:btlIn 1.6s cubic-bezier(.2,.9,.25,1) var(--d) forwards}
+.s21.active .btl i{animation:bob 5s ease-in-out calc(var(--d) + 1.6s) infinite}
+@keyframes btlIn{0%{opacity:0;transform:translateY(-140px) rotate(var(--r,-6deg))}55%{opacity:1}75%{transform:translateY(10px) rotate(0)}88%{transform:translateY(-4px)}100%{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(.6deg)}}
+.s21 .glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,236,190,.75),transparent);opacity:0;pointer-events:none}
+.s21.active .glow{animation:fade 1.4s ease calc(var(--d) + .6s) forwards}
+.s21 .vl{position:absolute;top:212px;width:1.5px;height:776px;background:#e0d1b6;transform:scaleY(0);transform-origin:top}
+.s21.active .vl{animation:grow 1.6s var(--ease-out) var(--d) forwards}
+.s21 .rl{position:absolute;top:631px;width:503px;height:1.5px;background:#b98a3e;transform:scaleX(0);transform-origin:left}
+.s21.active .rl{animation:draw 1.2s var(--ease-out) var(--d) forwards}
+.s21 .col{position:absolute;top:643px;white-space:nowrap}
+.s21 .col h3{font-family:var(--serif-display);font-weight:500;font-size:41px;line-height:52px;letter-spacing:-.02em;color:var(--ink)}
+.s21 .col .q{margin-top:4px;font-family:var(--ui);font-weight:600;font-size:26px;line-height:34px;color:#8f6418;letter-spacing:-.01em}
+.s21 .col .r{margin-top:13px;font-family:var(--ui);font-size:21.8px;line-height:27.6px;color:#2c2c28}
+.s21 .col .r b{font-weight:600;color:#1a1d1a}
+.s21 .col>*{opacity:0}
+.s21.active .col>*{animation:fadeUp .9s var(--ease-out) both;animation-delay:calc(var(--d) + var(--i) * 160ms)}
+.s21 .hl{position:absolute;left:103px;top:1019px;width:1712px;height:1.5px;background:#e3d6bd;transform:scaleX(0);transform-origin:left}
+.s21.active .hl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.s21 .foot{position:absolute;left:0;right:0;top:1031px;text-align:center;font-family:var(--ui);font-size:21.5px;color:#7c756c}
+
+/* S22 - Sample creative concepts */
+.s22{--ink:#14281e;background:#f5ecdc}
+.s22 .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.s22 .eyebrow{position:absolute;left:139px;top:124px;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.17em;color:#8f6418;white-space:nowrap}
+.s22 h2{position:absolute;left:136px;top:158px;font-family:var(--serif-display);font-weight:500;font-size:72px;line-height:1.1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.s22 .cd{position:absolute;border-radius:14px;background:linear-gradient(160deg,#fbf6ee,#f5ecdd);border:1.5px solid #eadcc4;overflow:hidden;
+  box-shadow:0 18px 36px -26px rgba(90,60,20,.45);opacity:0}
+.s22.active .cd{animation:cdIn 1.2s var(--ease-out) var(--d) both}
+@keyframes cdIn{from{opacity:0;transform:translate(var(--fx,0),40px) scale(.97)}to{opacity:1;transform:none}}
+.s22 .im{position:absolute;top:0;bottom:0;right:0;overflow:hidden;clip-path:inset(0 0 0 100%)}
+.s22 .im i{position:absolute;inset:0;background-size:cover;background-position:center}
+.s22.active .im{animation:imWipe 1.3s var(--ease-cine) calc(var(--d) + .3s) forwards}
+.s22.active .im i{animation:phZoom 11s ease-out calc(var(--d) + .3s) both}
+@keyframes imWipe{to{clip-path:inset(0 0 0 0)}}
+.s22 .tx{position:absolute;left:29px;top:20px;white-space:nowrap}
+.s22 .tx>*{opacity:0}
+.s22.active .tx>*{animation:fadeUp .9s var(--ease-out) both;animation-delay:calc(var(--d) + .5s + var(--i) * 140ms)}
+.s22 .no{font-family:var(--serif-display);font-weight:600;font-size:27px;line-height:30px;color:#9a6b22;font-variant-numeric:lining-nums}
+.s22 .u{display:block;width:26px;height:2px;background:#b98a3e;margin-top:3px}
+.s22 h3{margin-top:14px;font-family:var(--serif-display);font-weight:500;font-size:31px;line-height:35px;letter-spacing:-.02em;color:var(--ink)}
+.s22 .bd{margin-top:10px;font-family:var(--ui);font-size:18.5px;line-height:24.4px;color:#4a453f}
+.s22 .ds{display:block;width:40px;height:1.5px;background:#c9a463;margin:9px 0 7px}
+.s22 .mt{font-family:var(--ui);font-size:18.5px;line-height:23.5px;color:#9a6b22}
+/* polaroids */
+.s22 .pol{position:absolute;background:#f6ecd9;padding:12px 12px 16px;box-shadow:0 14px 26px -12px rgba(60,40,15,.5);opacity:0}
+.s22 .pol i{display:block;width:100%;height:100%;background-size:cover;background-position:center}
+.s22 .pol b{position:absolute;left:50%;top:-16px;transform:translateX(-50%) rotate(var(--tr,-2deg));background:rgba(244,232,206,.95);padding:3px 18px;font-family:var(--ui);font-weight:500;font-size:21px;color:#1d1d1b;box-shadow:0 2px 4px rgba(0,0,0,.12);white-space:nowrap}
+.s22.active .pol{animation:polIn 1.1s cubic-bezier(.2,.9,.25,1) var(--d) forwards}
+@keyframes polIn{0%{opacity:0;transform:translateY(-90px) rotate(calc(var(--rot) * 4)) scale(1.1)}60%{opacity:1}100%{opacity:1;transform:rotate(var(--rot))}}
+.s22 .hand{position:absolute;font-family:"Caveat",cursive;font-weight:500;font-size:26px;line-height:26px;color:#3a3a35;white-space:nowrap;opacity:0}
+.s22.active .hand{animation:fade .8s ease var(--d) forwards}
+.s22 .arw{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none}
+.s22 .arw path{fill:none;stroke:#3a3a35;stroke-width:2;stroke-linecap:round;stroke-dasharray:120;stroke-dashoffset:120}
+.s22.active .arw path{animation:dash 1s var(--ease-out) var(--d) forwards}
+.s22 .hl{position:absolute;left:112px;top:1013px;width:1696px;height:1.5px;background:#d9c6a2;transform:scaleX(0);transform-origin:left}
+.s22.active .hl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.s22 .foot{position:absolute;left:0;right:0;top:1023px;text-align:center;font-family:var(--ui);font-size:20px;color:#7c756c}
+
+/* S24 - Platform roles (slide-19 style) */
+.s24 .eyebrow{position:absolute;left:92px;top:124px;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.18em;color:#8f6418;white-space:nowrap}
+.s24 h2{position:absolute;left:89px;top:176px;font-family:var(--serif-display);font-weight:600;font-size:81px;line-height:1.1;letter-spacing:-.035em;color:#141a16;white-space:nowrap}
+.s24 .tbl{position:absolute;left:92px;top:318px;width:1736px;border-collapse:separate;border-spacing:0;font-family:var(--serif-text);font-size:26px;line-height:36px;box-shadow:0 18px 50px -24px rgba(90,60,20,.3);border-radius:12px}
+.s24 .tbl col.c1{width:270px} .s24 .tbl col.c2{width:470px} .s24 .tbl col.c3{width:560px}
+.s24 .tbl td{height:128px;padding:0 20px 0 30px;background:rgba(253,250,244,.97);border-top:1.5px solid #e3d6bd;color:#1a1d1a;position:relative}
+.s24 .tbl td+td{border-left:1.5px solid #e3d6bd}
+.s24 .tbl td:first-child{border-left:1.5px solid #e3d6bd;font-family:var(--serif-display);font-weight:600;font-size:36px;color:#8f6418;letter-spacing:-.01em}
+.s24 .tbl td:last-child{border-right:1.5px solid #e3d6bd;color:#4f6a58}
+.s24 .tbl td:nth-child(3){color:#4a453f}
+.s24 .tbl tr:nth-child(even) td{background:rgba(245,237,223,.97)}
+.s24 .tbl tr.top td{background:#173a2b;color:#f3ead8;border-color:#2c5a45;height:120px}
+.s24 .tbl tr.top td:first-child{color:#e0b260;border-top-left-radius:12px}
+.s24 .tbl tr.top td:last-child{border-top-right-radius:12px;color:#d9d2c0}
+.s24 .tbl tr.top td:nth-child(3){color:#d9d2c0}
+.s24 .tbl tr:last-child td{border-bottom:1.5px solid #e3d6bd}
+.s24 .tbl tr:last-child td:first-child{border-bottom-left-radius:12px} .s24 .tbl tr:last-child td:last-child{border-bottom-right-radius:12px}
+.s24 .tbl td{opacity:0}
+.s24 .tbl td .tx{display:inline-block}
+.s24 .tbl td:not(:first-child) .tx{clip-path:inset(0 100% 0 0)}
+.s24 .tbl td:nth-child(2)::before{content:"";position:absolute;left:-14px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;background:#c08a35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12h11M13 7l5 5-5 5' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat;transform:scale(0);z-index:2}
+.s24.active .tbl tr.top td{animation:fade .8s ease both;animation-delay:var(--d)}
+.s24.active .tbl tr.top{animation:headIn 1s var(--ease-out) var(--d) both}
+.s24.active .tbl td:first-child{animation:slideIn .9s var(--ease-out) both;animation-delay:calc(var(--d) + .2s + var(--i) * 700ms)}
+.s24.active .tbl td:not(:first-child){animation:fade .4s ease both;animation-delay:calc(var(--d) + .5s + var(--i) * 700ms)}
+.s24.active .tbl td:nth-child(2)::before{animation:arrowPop 1.1s var(--ease-out) both;animation-delay:calc(var(--d) + .55s + var(--i) * 700ms)}
+.s24.active .tbl td:nth-child(2) .tx{animation:wipe .9s var(--ease-cine) both;animation-delay:calc(var(--d) + .75s + var(--i) * 700ms)}
+.s24.active .tbl td:nth-child(3) .tx{animation:wipe .9s var(--ease-cine) both;animation-delay:calc(var(--d) + .95s + var(--i) * 700ms)}
+.s24.active .tbl td:nth-child(4) .tx{animation:wipe .9s var(--ease-cine) both;animation-delay:calc(var(--d) + 1.15s + var(--i) * 700ms)}
+.s24 .note{position:absolute;left:92px;top:976px;font-family:var(--ui);font-size:21px;color:#857d74;white-space:nowrap}
+
+/* ---- shared cream paper ---- */
+.cream{background:#f5ecdc}
+.cream .paper{position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 20%,#f8f0e2 0%,#f4eadb 55%,#efe3cf 100%)}
+.eb{position:absolute;font-family:var(--sans);font-weight:500;font-size:22.5px;letter-spacing:.17em;color:#8f6418;white-space:nowrap}
+.hd{position:absolute;font-family:var(--serif-display);font-weight:500;letter-spacing:-.03em;color:#14281e;white-space:nowrap;line-height:1.1}
+.mock{position:absolute;opacity:0;-webkit-mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(transparent,#000 4%,#000 96%,transparent);-webkit-mask-composite:source-in;mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(transparent,#000 4%,#000 96%,transparent);mask-composite:intersect}
+.mock i{position:absolute;inset:0;background-size:100% 100%}
+.slide.active .mock{animation:mockIn 1.5s cubic-bezier(.2,.9,.25,1) var(--d) forwards}
+.slide.active .mock i{animation:bob 6s ease-in-out calc(var(--d) + 1.5s) infinite}
+@keyframes mockIn{from{opacity:0;transform:translate(var(--fx,0),var(--fy,40px)) rotate(var(--fr,0deg))}to{opacity:1;transform:none}}
+.pcard{position:absolute;border-radius:16px;background:rgba(251,246,237,.85);border:1.5px solid #e9dcc5;box-shadow:0 18px 40px -30px rgba(90,60,20,.5);opacity:0}
+.slide.active .pcard{animation:cardUp 1.1s var(--ease-out) var(--d) both}
+.fade-items>*{opacity:0}
+.slide.active .fade-items>*{animation:fadeUp .9s var(--ease-out) both;animation-delay:calc(var(--d) + var(--i,0) * 150ms)}
+.footl{position:absolute;height:1.5px;background:#d9c6a2;transform:scaleX(0);transform-origin:left}
+.slide.active .footl{animation:draw 1.6s var(--ease-out) var(--d) forwards}
+.footn{position:absolute;left:0;right:0;text-align:center;font-family:var(--ui);font-size:20px;color:#7c756c}
+
+/* S25 */
+.s25 .logo{position:absolute;width:71px;height:70px;background-size:100% 100%;transform:scale(0)}
+.s25.active .logo{animation:icPop .9s var(--ease-out) var(--d) both}
+.s25 .ttl{position:absolute;font-family:var(--serif-text);font-size:35px;line-height:40px;letter-spacing:-.015em;color:#14281e;white-space:nowrap}
+.s25 .row{position:absolute;white-space:nowrap}
+.s25 .ci{position:absolute;width:68px;height:68px;border-radius:50%;background:#f1e3c8;display:grid;place-items:center;transform:scale(0)}
+.s25 .ci svg{width:34px;height:34px;fill:none;stroke:#a8772c;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.s25 .ci svg *{stroke-dasharray:80;stroke-dashoffset:80}
+.s25.active .ci{animation:icPop .8s var(--ease-out) var(--d) both}
+.s25.active .ci svg *{animation:dash 1.2s var(--ease-out) calc(var(--d) + .3s) forwards}
+.s25 .row p{opacity:0;font-family:var(--ui);font-size:20.5px;line-height:27px;color:#6a645c}
+.s25 .row p b{display:block;font-family:var(--serif-text);font-weight:400;font-size:22.5px;line-height:28px;color:#1d221e}
+.s25 .row p em{font-style:normal;color:#6a645c;font-family:var(--ui);font-size:20.5px}
+.s25.active .row p{animation:slideIn .9s var(--ease-out) calc(var(--d) + .2s) both}
+
+/* S26 */
+.s26 .ic{position:absolute;width:82px;height:82px;background-size:100% 100%;transform:scale(0)}
+.s26.active .ic{animation:icPop .9s var(--ease-out) var(--d) both}
+.s26 .bar{position:absolute;width:2px;height:52px;background:#c9a463;transform:scaleY(0)}
+.s26.active .bar{animation:grow .8s var(--ease-out) var(--d) forwards}
+.s26 .ttl{position:absolute;font-family:var(--serif-text);font-weight:700;font-size:40px;color:#14281e;white-space:nowrap;letter-spacing:-.02em}
+.s26 .bul{position:absolute;font-family:var(--ui);font-size:21.8px;line-height:26.8px;color:#3f4440;white-space:nowrap}
+.s26 .bul li{margin-bottom:6.5px}
+.s26 .bul li::before{left:-23px;top:.5em;width:6px;height:6px;--dot:#6a706b}
+
+/* S27 */
+.s27 .vl{position:absolute;left:967px;top:237px;width:1.5px;height:720px;background:#dccaa8;transform:scaleY(0);transform-origin:top}
+.s27 .hl{position:absolute;left:103px;top:618px;width:1717px;height:1.5px;background:#dccaa8;transform:scaleX(0);transform-origin:left}
+.s27.active .vl,.s27.active .hl{animation:grow 1.6s var(--ease-out) var(--d) forwards}
+.s27 .blk{position:absolute;white-space:nowrap}
+.s27 .no{font-family:var(--ui);font-size:20px;color:#8f6418}
+.s27 .no::after{content:"";display:block;width:24px;height:1.5px;background:#8f6418;margin-top:8px}
+.s27 h3{position:absolute;font-family:var(--serif-text);font-size:33.5px;line-height:40px;color:#14281e;letter-spacing:-.015em}
+.s27 .bd{position:absolute;font-family:var(--ui);font-size:21.5px;line-height:31.7px;color:#5f5a52}
+.s27 .ph{position:absolute;opacity:0}
+.s27 .ph i{position:absolute;inset:0;background-size:100% 100%}
+.s27.active .ph{animation:phSettle 1.3s cubic-bezier(.2,.9,.25,1) var(--d) forwards}
+@keyframes phSettle{0%{opacity:0;transform:translateY(30px) rotate(var(--r,4deg)) scale(.92)}60%{opacity:1}100%{opacity:1;transform:none}}
+
+/* ---- shared table style (slides 30, 33) ---- */
+.tt{position:absolute;border-collapse:separate;border-spacing:0;font-family:var(--ui);font-size:22.5px;line-height:33px;box-shadow:0 18px 50px -24px rgba(90,60,20,.3);border-radius:12px}
+.tt th{height:66px;background:#173a2b;color:#f3ead8;font-family:var(--serif-text);font-weight:700;font-size:24px;text-align:left;padding:0 0 0 22px}
+.tt th:first-child{border-top-left-radius:12px} .tt th:last-child{border-top-right-radius:12px}
+.tt th+th{border-left:1.5px solid #2c5a45}
+.tt td{padding:16px 16px 16px 22px;vertical-align:top;background:rgba(253,250,244,.97);border-top:1.5px solid #e3d6bd;color:#1f2420}
+.tt tbody tr:nth-child(even) td{background:rgba(245,237,223,.97)}
+.tt td+td{border-left:1.5px solid #e3d6bd}
+.tt td:first-child{border-left:1.5px solid #e3d6bd;font-family:var(--serif-text);font-size:24px;color:#8f6418}
+.tt td:last-child{border-right:1.5px solid #e3d6bd}
+.tt tbody tr:last-child td{border-bottom:1.5px solid #e3d6bd}
+.tt tbody tr:last-child td:first-child{border-bottom-left-radius:12px} .tt tbody tr:last-child td:last-child{border-bottom-right-radius:12px}
+.tt thead tr,.tt td{opacity:0}
+.slide.active .tt thead tr{opacity:1;animation:headIn 1s var(--ease-out) var(--d) both}
+.slide.active .tt td{animation:fadeUp .7s var(--ease-out) both;animation-delay:calc(var(--d) + .5s + var(--r) * 450ms + var(--c) * 110ms)}
+.slide.active .tt td:first-child{animation-name:slideIn}
+.tnote{position:absolute;font-family:var(--ui);font-size:21px;color:#857d74;white-space:nowrap}
+
+/* S29 - format split */
+.s29 .pan{position:absolute;top:322px;height:596px;border-radius:16px;opacity:0}
+.s29.active .pan{animation:cardUp 1.1s var(--ease-out) var(--d) both}
+.s29 .dk{left:105px;width:828px;background:#173a2b;box-shadow:0 24px 50px -24px rgba(10,40,25,.6)}
+.s29 .lt{left:964px;width:828px;background:rgba(253,250,244,.95);border:1.5px solid #e6d8bf;box-shadow:0 18px 40px -30px rgba(90,60,20,.5)}
+.s29 .pt{position:absolute;left:38px;top:50px;font-family:var(--ui);font-weight:600;font-size:29px;color:#d39b45}
+.s29 .lt .pt{color:#8f6418}
+.s29 .sp{position:absolute;left:38px;top:110px;width:752px;border-collapse:collapse;font-family:var(--ui);font-size:25px;color:#e2ddd0}
+.s29 .sp td{height:57.5px;border-bottom:1.5px solid rgba(255,255,255,.06);padding:0 16px}
+.s29 .sp td:last-child{text-align:right;width:200px;border-left:1.5px solid rgba(255,255,255,.06);font-variant-numeric:tabular-nums;font-weight:500}
+.s29 .sp tr{opacity:0}
+.s29.active .sp tr{animation:slideIn .8s var(--ease-out) both;animation-delay:calc(var(--d) + var(--i) * 150ms)}
+.s29 .sp tr.tot td{color:#d39b45;border-bottom:none}
+.s29 .sp .barc{position:absolute;left:0;bottom:6px;height:3px;background:linear-gradient(90deg,#d39b45,rgba(211,155,69,.2));transform:scaleX(0);transform-origin:left;border-radius:2px}
+.s29.active .sp .barc{animation:draw 1.2s var(--ease-out) calc(var(--d) + .4s + var(--i) * 150ms) forwards}
+.s29 .sp td:first-child{position:relative}
+.s29 .pn{position:absolute;left:38px;top:478px;font-family:var(--ui);font-size:21.5px;line-height:30px;color:#a7b0a6}
+.s29 .rl{position:absolute;left:62px;top:105px;font-family:var(--ui);font-size:24.5px;line-height:33.5px;color:#4d4b46;white-space:nowrap}
+.s29 .rl li{margin-bottom:5px}
+.s29 .rl li::before{left:-22px;top:.6em;width:7px;height:7px;--dot:#4d4b46}
+.s29 .rl b{font-weight:600;color:#33352f}
+
+/* S32 - Diwali campaign */
+.s32 .ins{position:absolute;left:96px;top:290px;width:1726px;height:127px;border-radius:12px;background:#173a2b;clip-path:inset(0 100% 0 0 round 12px)}
+.s32.active .ins{animation:boxIn 1.3s var(--ease-cine) var(--d) forwards}
+.s32 .ib{position:absolute;left:131px;top:313px;width:5px;height:80px;background:#c08a35;transform:scaleY(0)}
+.s32.active .ib{animation:grow .8s var(--ease-out) var(--d) forwards}
+.s32 .it{position:absolute;left:167px;top:315px;font-family:var(--ui);font-size:26px;line-height:35px;color:#f2ede2;white-space:nowrap}
+.s32 .it b{font-weight:700;color:#fff}
+.s32 .cd{position:absolute;top:448px;width:526px;height:300px;border-radius:12px;padding:34px 30px;opacity:0}
+.s32 .cd.l{background:rgba(253,250,244,.96);border:1.5px solid #e6d8bf}
+.s32 .cd.g{background:linear-gradient(140deg,#c99a48,#b58630);box-shadow:0 22px 40px -22px rgba(150,95,25,.6)}
+.s32.active .cd{animation:cardUp 1.1s var(--ease-out) var(--d) both}
+.s32.active .cd.g{animation:cardUp 1.1s var(--ease-out) var(--d) both, goalGlow 2.8s ease-in-out calc(var(--d) + 1.2s) infinite}
+.s32 .cd h3{font-family:var(--ui);font-weight:700;font-size:25px;color:#8f6418;white-space:nowrap}
+.s32 .cd.g h3{color:#2a1d0c}
+.s32 .cd p{margin-top:14px;font-family:var(--ui);font-size:21px;line-height:32px;color:#4f4a44;white-space:nowrap}
+.s32 .cd.g p{color:#2a1d0c}
+.s32 .lamp{position:absolute;left:1838px;top:448px}
+
+/* S35–38 shared card */
+.kc{position:absolute;border-radius:14px;background:rgba(253,250,244,.95);border:1.5px solid #e6d8bf;box-shadow:0 18px 40px -30px rgba(90,60,20,.5);overflow:hidden;opacity:0}
+.kc.dk{background:#173a2b;border-color:#173a2b;box-shadow:0 24px 50px -24px rgba(10,40,25,.6)}
+.slide.active .kc{animation:cardUp 1.1s var(--ease-out) var(--d) both}
+.kc .kt{position:absolute;left:38px;top:42px;font-family:var(--ui);font-weight:600;font-size:29px;color:#8f6418;white-space:nowrap}
+.kc.dk .kt{color:#d39b45}
+.kc .bul{position:absolute;left:66px;font-family:var(--ui);font-size:23.5px;line-height:33px;color:#4d4b46;white-space:nowrap}
+.kc .bul li{margin-bottom:4px}
+.kc .bul li::before{left:-22px;top:.62em;width:6px;height:6px;--dot:#5d5b56}
+.kc .bul b{font-weight:600;color:#33352f}
+/* S35 */
+.s35 .kc .no{position:absolute;left:32px;top:28px;font-family:var(--serif-display);font-size:26px;color:#a8701e}
+.s35 .kc .no::after{content:"";display:block;width:26px;height:1.5px;background:#a8701e;margin-top:6px}
+.s35 .kc .kt{left:108px;top:30px;font-family:var(--serif-text);font-weight:400;font-size:34px;color:#14281e}
+.s35 .kc .bul{left:112px;top:92px;font-size:20.5px;line-height:28.5px}
+.s35 .kc .bul li::before{--dot:#c08a35;width:7px;height:7px}
+.s35 .kc .ph{position:absolute;left:0;right:0;bottom:0;opacity:0;-webkit-mask:linear-gradient(transparent,#000 22%);mask:linear-gradient(transparent,#000 22%)}
+.s35 .kc .ph.hard{-webkit-mask:none;mask:none}
+.s35 .kc .ph i{position:absolute;inset:0;background-size:100% 100%}
+.s35.active .kc .ph{animation:phRise 1.3s var(--ease-out) calc(var(--d) + .8s) forwards}
+.s35.active .kc .ph i{animation:phZoom 12s ease-out calc(var(--d) + .8s) both;transform-origin:50% 100%}
+/* S37 turnaround */
+.s37 .ta{position:absolute;left:38px;top:108px;width:494px;border-collapse:collapse;font-family:var(--ui);font-size:24.5px;color:#e2ddd0}
+.s37 .ta td{height:58px;padding:0 16px;border-bottom:1.5px solid rgba(255,255,255,.06)}
+.s37 .ta td:last-child{text-align:right;font-weight:500}
+.s37 .ta tr{opacity:0}
+.s37.active .ta tr{animation:slideIn .8s var(--ease-out) both;animation-delay:calc(var(--d) + var(--i) * 150ms)}
+.s37 .ta tr.hot td:last-child{color:#e0a64e}
+.s37.active .ta tr.hot td:last-child{animation:heroGlow 1.8s ease-out calc(var(--d) + 1.4s) both}
+.s37 .tn{position:absolute;left:38px;top:478px;font-family:var(--ui);font-size:22.5px;line-height:32px;color:#a7b0a6}
+/* thank you */
+.s39 .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,4,6,.45) 0%,rgba(40,4,6,.15) 40%,transparent 58%)}
+.s39 .eyebrow{position:absolute;left:111px;top:139px;font-family:var(--sans);font-size:19.5px;letter-spacing:.29em;white-space:nowrap}
+.s39 .title{position:absolute;left:118px;top:340px;font-family:var(--serif-display);font-weight:600;font-size:150px;line-height:1;color:var(--cream);letter-spacing:-.03em;text-shadow:0 6px 30px rgba(30,0,0,.35);white-space:nowrap}
+.s39 .tag{position:absolute;left:126px;top:540px;font-family:var(--serif-text);font-size:41.8px;line-height:54px;color:var(--cream)}
+.s39 .gl{position:absolute;left:128px;top:690px;width:220px;--c:#e3b06a}
+.s38 .tt td:first-child{font-family:var(--ui);font-size:22.5px;color:#1f2420}
+.s38 .tt td.dir{color:#8f6418;font-weight:500}
+.s38 .tt td{padding-top:20px;padding-bottom:20px}
+
+/* ===================== GLOBAL TYPE SYSTEM (QC pass) ===================== */
+:root{--fs-title:64px;--fs-h:32px;--fs-sub:25px;--fs-body:21px;--fs-foot:19px;--fs-eb:21px;--ink-black:#121412}
+.slide:not(.s01):not(.s03):not(.s39) .T{font-family:var(--serif-display)!important;font-weight:500!important;font-size:var(--fs-title)!important;line-height:1.14!important;letter-spacing:-.02em!important;color:var(--ink-black)!important;word-spacing:0!important}
+.slide:not(.s01):not(.s03):not(.s39) .T em{font-family:inherit!important;font-size:inherit!important;font-style:italic;font-weight:400}
+.s03 .T{font-weight:500!important;font-size:112px!important;letter-spacing:-.015em!important}
+.s01 .T,.s39 .T{font-weight:500!important}
+.slide .E{font-family:var(--sans)!important;font-weight:500!important;font-size:var(--fs-eb)!important;letter-spacing:.18em!important;color:#8f6418!important}
+.s01 .E,.s39 .E{color:transparent!important}
+/* headings */
+.slide:not(.s03) h3,.s25 .ttl,.s26 .ttl,.s14 .txt h3,.s21 .col h3,.s18 .cap h3,.s16 h3,.s20 h3{font-family:var(--serif-display)!important;font-weight:500!important;font-size:var(--fs-h)!important;line-height:1.22!important;letter-spacing:-.015em!important}
+.s04 h3,.s05 h3,.s06 h3,.s07 h3,.s09 h3,.s10 h3,.s13 h3,.s14 h3,.s15 h3,.s16 h3,.s18 h3,.s20 h3,.s21 h3,.s22 h3,.s25 .ttl,.s26 .ttl,.s27 h3{color:var(--ink-black)!important}
+/* sub-headings (gold labels) */
+.kc .kt,.s29 .pt,.s32 .cd h3,.s21 .col .q,.s07 .age,.s10 .rung .lbl{font-size:var(--fs-sub)!important;line-height:1.3!important}
+.s32 .cd h3,.kc .kt,.s29 .pt,.s21 .col .q{font-family:var(--ui)!important;font-weight:600!important}
+/* body */
+.s02 .blk p,.s04 .stat p,.s04 .bul,.s06 .card p,.s07 .col p.b,.s07 .job p,.s08 .rw p,.s09 .bul,.s10 .rung p.d,.s10 .rung .br,
+.s14 .txt p,.s16 p,.s18 .cap p,.s20 .bd,.s20 .fm,.s21 .col .r,.s22 .bd,.s22 .mt,.s25 .row p,.s26 .bul,.s27 .bd,.s29 .rl,.s29 .sp,.s29 .pn,
+.s32 .it,.s32 .cd p,.kc .bul,.s36 .kc p.a,.s37 .ta,.s37 .tn,.s05 .tbl,.s13 .tbl,.s15 .tbl,.s19 .tbl,.s24 .tbl,.tt,.s12 .pill{font-size:var(--fs-body)!important}
+.s25 .row p b,.s25 .row p em{font-size:22px!important}
+/* table first-column labels */
+.s13 .tbl td:first-child,.s15 .tbl td:first-child,.s24 .tbl td:first-child,.tt td:first-child{font-size:23px!important}
+.s05 .tbl th,.s13 .tbl th,.s15 .tbl th,.s19 .tbl th,.tt th{font-size:23px!important}
+/* footnotes */
+.s02 .src,.s05 .note,.s07 .note,.s09 .foot,.s10 .foot,.s13 .note,.s14 .foot,.s15 .foot,.s16 .foot,.s19 .note,.s21 .foot,.s22 .foot,.s24 .note,.footn,.tnote,.s08 .c2{font-size:var(--fs-foot)!important}
+
+/* QC fixes */
+.s22 .bd,.s22 .mt{font-size:18px!important;line-height:23px!important}
+.s22 h3{font-size:27px!important}
+.s16 p{font-size:19px!important;line-height:26px!important}
+.s16 h3{font-size:30px!important}
+.s20 .bd,.s20 .fm{font-size:18.5px!important;line-height:25px!important}
+.s20 h3{font-size:29px!important}
+.s07 .col p.b,.s07 .job p{font-size:22px!important}
+
+/* QC: eyebrow→title rhythm (32px) and left alignment */
+.s02 .T{margin-top:-7px!important;margin-left:1px!important}
+.s04 .T{margin-top:-24px!important;margin-left:1px!important}
+.s05 .T{margin-top:-17px!important;margin-left:-3px!important}
+.s06 .T{margin-top:-32px!important;margin-left:-1px!important}
+.s07 .T{margin-top:-9px!important;margin-left:-10px!important}
+.s08 .T{margin-top:-8px!important;margin-left:-1px!important}
+.s09 .T{margin-top:-9px!important;margin-left:1px!important}
+.s10 .T{margin-top:-1px!important;margin-left:-1px!important}
+.s12 .T{margin-top:-4px!important;margin-left:1px!important}
+.s13 .T{margin-top:1px!important;margin-left:0px!important}
+.s14 .T{margin-top:11px!important;margin-left:1px!important}
+.s15 .T{margin-top:2px!important;margin-left:-1px!important}
+.s16 .T{margin-top:24px!important;margin-left:1px!important}
+.s18 .T{margin-top:28px!important;margin-left:2px!important}
+.s19 .T{margin-top:-6px!important;margin-left:1px!important}
+.s20 .T{margin-top:2px!important;margin-left:0px!important}
+.s21 .T{margin-top:16px!important;margin-left:-1px!important}
+.s22 .T{margin-top:12px!important;margin-left:1px!important}
+.s24 .T{margin-top:-6px!important;margin-left:1px!important}
+.s25 .T{margin-top:8px!important;margin-left:1px!important}
+.s26 .T{margin-top:9px!important;margin-left:0px!important}
+.s27 .T{margin-top:4px!important;margin-left:-1px!important}
+.s29 .T{margin-top:-4px!important;margin-left:0px!important}
+.s30 .T{margin-top:-4px!important;margin-left:1px!important}
+.s32 .T{margin-top:6px!important;margin-left:2px!important}
+.s33 .T{margin-top:-4px!important;margin-left:0px!important}
+.s35 .T{margin-top:2px!important;margin-left:2px!important}
+.s36 .T{margin-top:-2px!important;margin-left:0px!important}
+.s37 .T{margin-top:-2px!important;margin-left:0px!important}
+.s38 .T{margin-top:-2px!important;margin-left:0px!important}
+.s22 .hand{margin-left:12px}
+.s22 .hand:first-of-type{}
+.s21 .btl,.s21 .glow{margin-top:26px}
+.s21 .btl{scale:.9;transform-origin:50% 0}
+
+/* SANS-SERIF THROUGHOUT */
+:root{--serif-display:"Inter","Helvetica Neue",Arial,sans-serif!important;--serif-text:"Inter","Helvetica Neue",Arial,sans-serif!important;--sans:"Inter","Helvetica Neue",Arial,sans-serif!important;--ui:"Inter","Helvetica Neue",Arial,sans-serif!important}
+.slide,.slide *:not(.hand){font-family:"Inter","Helvetica Neue",Arial,sans-serif!important}
+.slide:not(.s01):not(.s03):not(.s39) .T{font-weight:600!important;letter-spacing:-.025em!important;font-size:58px!important}
+.s03 .T{font-weight:600!important;font-size:100px!important;letter-spacing:-.03em!important}
+.s01 .T,.s39 .T{font-weight:600!important;letter-spacing:-.04em!important}
+.slide:not(.s03) h3,.s25 .ttl,.s26 .ttl{font-weight:600!important;letter-spacing:-.02em!important;font-size:28px!important}
+.s03 .num,.s06 .no,.s10 .rung .no,.s04 .stat .n,.s20 .pct,.s16 .no,.s27 .no,.s22 .no{font-weight:600!important;letter-spacing:-.03em!important}
+.s01 .tag,.s39 .tag{font-weight:400!important;letter-spacing:-.01em!important}
+</style>
+</head>
+<body>
+<div id="viewport">
+<main id="stage" aria-live="polite">
+
+  <!-- ============ SLIDE 01 · Cover ============ -->
+  <section class="slide s01" data-duration="6750" aria-label="Slide 1: Meera cover">
+    <div class="bg" data-bg="assets/s01-bg.jpg" style="--kb-scale:1.07;--kb-x:-1.2%;--kb-y:-.4%;--kb-dur:12s"></div>
+    <div class="shade"></div>
+    <div class="light-sweep" style="--sweep-d:2.2s"></div>
+    <canvas class="petals" data-count="10"></canvas>
+    <div class="vignette"></div>
+
+    <p class="E eyebrow shimmer" style="--d:0.3s">SOCIAL MEDIA PITCH &nbsp;·&nbsp; OCTOBER 2026</p>
+    <h1 class="T title split" style="--d:0.54s">Meera</h1>
+    <p class="tag lines" style="--d:1.02s">Goodness of tradition<br>translated for a generation<br>that didn’t grow up with it.</p>
+  </section>
+
+  <!-- ============ SLIDE 02 · The brief ============ -->
+  <section class="slide s02" data-duration="9000" aria-label="Slide 2: The brief, as we read it">
+    <div class="bg" data-bg="assets/s02-bg.jpg" style="--kb-scale:1.05;--kb-x:0%;--kb-y:0%;--kb-o:0% 40%;--kb-dur:15s"></div>
+    <canvas class="petals" data-count="7" data-colors="#fffaf0,#f4ead6,#efe2c4"></canvas>
+    <div class="vignette" style="opacity:.45"></div>
+
+    <p class="E eyebrow shimmer" style="--d:0.24s">THE BRIEF, AS WE READ IT</p>
+    <h2 class="T lines" style="--d:0.42s">Make a 27-year-old brand feel 24.</h2>
+    <div class="blk" style="left:166px;top:300px">
+      <h3 class="a" data-a="fade-up" style="--d:0.96s;--t:1.2s">The audience to win</h3>
+      <p class="a" data-a="fade-up" style="--d:1.11s;--t:1.3s">18–34, urban and small-town, where Mamaearth,<br>Clinic Plus and Moxie already have traction.<br>35+ is already ours.</p>
+    </div>
+    <div class="blk" style="left:918px;top:300px">
+      <h3 class="a" data-a="fade-up" style="--d:1.11s;--t:1.2s">The products to carry it</h3>
+      <p class="a" data-a="fade-up" style="--d:1.26s;--t:1.3s">2-in-1 Shampoo Mask, Anti-Dandruff, Smooth &amp; Shine<br>as heroes. Herbal Hairwash Powder owns Diwali.<br>Rest stays BAU.</p>
+    </div>
+    <div class="blk" style="left:166px;top:500px">
+      <h3 class="a" data-a="fade-up" style="--d:1.26s;--t:1.2s">The constraint we respect</h3>
+      <p class="a" data-a="fade-up" style="--d:1.41s;--t:1.3s">Approved identity, tone and claims stay. We change<br>the expression, not the brand. One handle per platform,<br>English-led.</p>
+    </div>
+    <div class="blk gold" style="left:918px;top:500px">
+      <h3 class="a" data-a="fade-up" style="--d:1.41s;--t:1.2s">The work</h3>
+      <p class="a" data-a="fade-up" style="--d:1.56s;--t:1.3s">20+ original assets a month, product shoots,<br>platform-specific adaptation, ORM, reporting -<br>and creator vetting if you want it.</p>
+    </div>
+
+    <p class="src a" data-a="fade" style="--d:1.74s"><b>Sources:</b> CavinKare brief, October 2026 &nbsp;·&nbsp; cavinkare.com &nbsp;·&nbsp; cavinkart.com &nbsp;·&nbsp; brand and competitor social handles</p>
+  </section>
+
+  <!-- ============ SLIDE 03 · Section 01 ============ -->
+  <section class="slide s03" data-duration="6000" aria-label="Slide 3: 01 Understanding Meera">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:-1%;--kb-y:.6%;--kb-o:30% 60%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">01</p>
+    <h2 class="T split" style="--d:0.54s">Understanding Meera</h2>
+    <p class="sub lines" style="--d:1.2s">The equity, the portfolio, the audience we have to win<br>and an honest read on whether the branding gets us there.</p>
+  </section>
+
+  <!-- ============ SLIDE 04 · Meera today ============ -->
+  <section class="slide s04" data-duration="9750" aria-label="Slide 4: Meera today">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:15s"></div>
+    <div class="vignette" style="opacity:.35"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">MEERA TODAY</p>
+    <h2 class="T lines" style="--d:0.36s">An equity you cannot buy, on a feed that doesn't show it.</h2>
+
+    <div class="stat a" data-a="fade-up" style="left:122px;--d:0.78s"><span class="n" data-count data-delay="0.78">27+</span><p>years as a CavinKare<br>flagship haircare brand</p></div>
+    <span class="vr" style="left:474px;--d:0.84s"><b></b><b></b></span>
+    <div class="stat a" data-a="fade-up" style="left:561px;--d:0.9s"><span class="n" data-count data-delay="0.9">6</span><p>formats: shampoo, powder,<br>paste, oil, conditioner, mask</p></div>
+    <span class="vr" style="left:937px;--d:0.96s"><b></b><b></b></span>
+    <div class="stat a" data-a="fade-up" style="left:1017px;--d:1.02s"><span class="n" data-count data-delay="1.02">4</span><p>handles: Instagram, Facebook,<br>X, YouTube one each</p></div>
+    <span class="vr" style="left:1404px;--d:1.08s"><b></b><b></b></span>
+    <div class="stat gold a" data-a="fade-up" style="left:1475px;width:400px;--d:1.14s"><span class="n" data-count data-delay="1.14">18–34</span><p>the gap we are being hired to<br>close</p></div>
+
+    <h3 class="a" data-a="fade-up" style="left:122px;width:830px;--d:1.5s">What the brand genuinely owns</h3>
+    <ul class="bul" style="left:177px;--d:1.68s">
+      <li>A name trusted by consumers and retailers across South India</li>
+      <li>Real traditional practice, not borrowed Ayurveda: shikakai,<br>kunkudukai, chemparathi, badam, the oil bath</li>
+      <li>Price access that D2C challengers cannot match</li>
+    </ul>
+    <h3 class="a" data-a="fade-up" style="left:1024px;width:793px;--d:1.65s">Proof the brand is already moving</h3>
+    <ul class="bul" style="left:1070px;--d:1.83s">
+      <li>2-in-1 Shampoo Mask, April 2026&nbsp; a category Meera created,<br>₹300 for 100g</li>
+      <li>Meera Enrich: a no-sulphate, premium range already in market</li>
+      <li>Meera Music&nbsp; an owned sound and culture asset, barely used</li>
+    </ul>
+  </section>
+
+  <!-- ============ SLIDE 05 · Portfolio and priority ============ -->
+  <section class="slide s05" data-duration="9750" aria-label="Slide 5: Portfolio and priority">
+    <div class="bg" data-bg="assets/s05-bg.jpg" style="--kb-scale:1.025;--kb-x:0%;--kb-y:0%;--kb-o:50% 58%;--kb-dur:15s"></div>
+    <div class="light-sweep" style="--sweep-d:3.2s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">PORTFOLIO AND PRIORITY</p>
+    <h2 class="T lines" style="--d:0.36s">Three products carry the strategy.<br>The rest carries the brand.</h2>
+
+    <table class="tbl" style="--d:0.84s">
+      <colgroup><col class="c1"><col class="c2"><col></colgroup>
+      <thead><tr><th>Product</th><th>What it is</th><th>Role in this financial year</th></tr></thead>
+      <tbody>
+        <tr style="--i:0"><td>2-in-1 Shampoo Mask</td><td>Shampoo + mask, one step, 120-hour claim</td><td class="hero">Hero: category creation</td></tr>
+        <tr style="--i:1"><td>Anti-Dandruff Shampoo</td><td>Small onion, fenugreek, hibiscus</td><td class="hero">Hero: concern-led acquisition</td></tr>
+        <tr style="--i:2"><td>Smooth &amp; Shine Shampoo</td><td>Softness and shine, everyday wash</td><td class="hero">Hero: habit and aesthetics</td></tr>
+        <tr style="--i:3"><td>Herbal Hairwash Powder</td><td>Shikakai oil-bath ritual, in powder form</td><td class="hero">Diwali hero: campaign lead</td></tr>
+        <tr style="--i:4"><td>Herbal Oil &amp; Pure Coconut Oil</td><td>4 oils, 12 herbs, and pure coconut</td><td>BAU: ritual and pre-wash content</td></tr>
+        <tr style="--i:5"><td>Paste, Conditioner, Enrich</td><td>Hairwash paste, conditioner, no-sulphate</td><td>BAU: range depth, seasonal spikes</td></tr>
+      </tbody>
+    </table>
+
+    
+    <p class="note a" data-a="fade-up" style="--d:2.16s">Hero products receive the strategic and creative focus; BAU products stay in rotation so the full range keeps visibility.</p>
+  </section>
+
+  <!-- ============ SLIDE 06 · Why 18–34 under-indexes ============ -->
+  <section class="slide s06" data-duration="11250" aria-label="Slide 6: Why 18–34 under-indexes">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    
+    
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">WHY 18–34 UNDER-INDEXES</p>
+    <h2 class="T lines" style="--d:0.36s">Four reasons,<br>none of them<br>the product.</h2>
+
+    <span class="vline" style="top:86px;height:440px;transform-origin:bottom;--d:0.72s"></span>
+    <span class="vline" style="top:558px;height:476px;transform-origin:top;--d:0.72s"></span>
+    <span class="hline" style="left:689px;width:541px;transform-origin:right;--d:0.72s"></span>
+    <span class="hline" style="left:1262px;width:572px;transform-origin:left;--d:0.72s"></span>
+    
+
+    <div class="card" style="left:751px;top:98px;--d:0.9s">
+      <div class="ic" style="--bgc:#ecd3c9;--icc:#7c2328"><svg viewBox="0 0 64 64"><rect x="10" y="26" width="44" height="30" rx="3"/><path d="M10 26 L52 14 L49 6 L9 17 Z"/><path d="M20 14 L25 21 M31 11 L36 18 M42 8 L47 15"/><path d="M28 34 L28 48 L40 41 Z"/></svg></div>
+      <span class="no a" data-a="fade" style="--d:1.11s">01</span><span class="dash"></span>
+      <h3 class="a" data-a="fade-up" style="--d:1.23s">Discovery moved</h3>
+      <p class="a" data-a="fade-up" style="top:210px;--d:1.35s">This group meets a shampoo<br>in a reel and a comment section,<br>not a TVC. Meera’s strongest<br>work is still built for television<br>and cut down for feed.</p>
+    </div>
+    <div class="card" style="left:1331px;top:96px;--d:1.08s">
+      <div class="ic" style="--bgc:#d7dcc3;--icc:#2f3a2c"><svg viewBox="0 0 64 64"><path d="M32 9C18 9 8 17.5 8 28.5c0 6 3 11 8 14.5L14 54l11-6.5c2.2.5 4.5.8 7 .8 14 0 24-8.6 24-19.6S46 9 32 9z"/><path d="M22 29h.5M32 29h.5M42 29h.5" stroke-width="5"/></svg></div>
+      <span class="no a" data-a="fade" style="--d:1.29s">02</span><span class="dash"></span>
+      <h3 class="a" data-a="fade-up" style="--d:1.41s">The language changed</h3>
+      <p class="a" data-a="fade-up" style="top:215px;--d:1.53s">They group in a new vocabulary:<br>scalp health, frizz, porosity,<br>wash day, sulphate-free, build-up.<br>Meera speaks in ingredients<br>and percentages.</p>
+    </div>
+    <div class="card" style="left:751px;top:576px;--d:1.26s">
+      <div class="ic" style="--bgc:#f0cbcd;--icc:#7c2328"><svg viewBox="0 0 64 64"><path d="M32 53S9 39 9 23.5C9 16 15 10 22 10c4.6 0 8 2.4 10 6 2-3.6 5.4-6 10-6 7 0 13 6 13 13.5C55 39 32 53 32 53z"/></svg></div>
+      <span class="no a" data-a="fade" style="--d:1.47s">03</span><span class="dash"></span>
+      <h3 class="a" data-a="fade-up" style="--d:1.59s">Trust without<br>self-expression</h3>
+      <p class="a" data-a="fade-up" style="top:246px;--d:1.71s">They believe Meera works.<br>They don’t yet feel it says<br>anything about them. In this<br>category, at this age, the pack<br>is a statement on a shared<br>bathroom shelf.</p>
+    </div>
+    <div class="card" style="left:1331px;top:576px;--d:1.44s">
+      <div class="ic" style="--bgc:#f8e3a6;--icc:#8a5a1a"><svg viewBox="0 0 64 64"><circle cx="32" cy="17" r="7"/><circle cx="16" cy="23" r="5.5"/><circle cx="48" cy="23" r="5.5"/><path d="M19 52V40c0-7 6-12 13-12s13 5 13 12v12z"/><path d="M8 52V41c0-5 3.5-8.5 8-8.5 1.6 0 3 .4 4.4 1.1M56 52V41c0-5-3.5-8.5-8-8.5-1.6 0-3 .4-4.4 1.1M8 52h48"/></svg></div>
+      <span class="no a" data-a="fade" style="--d:1.65s">04</span><span class="dash"></span>
+      <h3 class="a" data-a="fade-up" style="--d:1.77s">No face, no community</h3>
+      <p class="a" data-a="fade-up" style="top:224px;--d:1.89s">Challengers have founders,<br>dermats and creators who show<br>up weekly. Meera has beautiful<br>models who could belong to<br>any brand.</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 07 · The audience, in three parts ============ -->
+  <section class="slide s07" data-duration="11250" aria-label="Slide 7: The audience, in three parts">
+    <div class="paper"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE AUDIENCE, IN THREE PARTS</p>
+    <h2 class="T a" data-a="fade-up" style="--d:0.33s"><span data-count data-delay="0.36" data-dur="1400">18–34</span> is not one person.</h2>
+
+    <span class="vline" style="left:652px;--d:0.72s"></span>
+    <span class="vline" style="left:1265px;--d:0.81s"></span>
+
+    <div class="arch" style="left:201px;width:301px;--d:0.66s"><div class="ph"><i style="background-image:url('assets/s07-p1.jpg')"></i></div><svg viewBox="0 0 301 301" preserveAspectRatio="none"><path d="M0 301V150.5A150.5 150.5 0 0 1 301 150.5V301"/></svg></div>
+    <div class="arch" style="left:804px;width:310px;--d:0.84s"><div class="ph"><i style="background-image:url('assets/s07-p2.jpg')"></i></div><svg viewBox="0 0 310 301" preserveAspectRatio="none"><path d="M0 301V155.0A155.0 155.0 0 0 1 310 155.0V301"/></svg></div>
+    <div class="arch" style="left:1415px;width:301px;--d:1.02s"><div class="ph"><i style="background-image:url('assets/s07-p3.jpg')"></i></div><svg viewBox="0 0 301 301" preserveAspectRatio="none"><path d="M0 301V150.5A150.5 150.5 0 0 1 301 150.5V301"/></svg></div>
+    <div class="col" style="left:127px;--d:0.96s">
+      <p class="age a" data-a="fade-up" style="--d:1.17s">18–22</p>
+      <h3 class="a" data-a="fade-up" style="--d:1.23s">The hostel wash</h3>
+      <p class="b a" data-a="fade-up" style="--d:1.32s">First time buying her own shampoo.<br>Hard water, shared bathroom, small<br>budget, big influence from reels<br>and friends. Buys the 180ml.</p>
+      <span class="mini"></span>
+      <div class="job"><span class="ic" style="--bgc:#f2cfcd"><svg viewBox="0 0 64 64"><circle cx="32" cy="17" r="7"/><circle cx="16" cy="23" r="5.5"/><circle cx="48" cy="23" r="5.5"/><path d="M19 52V40c0-7 6-12 13-12s13 5 13 12v12z"/><path d="M8 52V41c0-5 3.5-8.5 8-8.5 1.6 0 3 .4 4.4 1.1M56 52V41c0-5-3.5-8.5-8-8.5-1.6 0-3 .4-4.4 1.1M8 52h48"/></svg></span><p class="a" data-a="fade" style="--d:1.74s"><b>Our job:</b> be the recommendation<br>a friend makes.</p></div>
+    </div>
+    <div class="col" style="left:726px;--d:1.14s">
+      <p class="age a" data-a="fade-up" style="--d:1.35s">23–28</p>
+      <h3 class="a" data-a="fade-up" style="--d:1.41s">The first-salary shelf</h3>
+      <p class="b a" data-a="fade-up" style="--d:1.5s">Building a real routine. Reads ingredient<br>lists, knows what sulphate-free means,<br>trades up for results. Open to a mask,<br>a serum, a spa step.</p>
+      <span class="mini"></span>
+      <div class="job"><span class="ic" style="--bgc:#d9e2c8"><svg viewBox="0 0 64 64"><path d="M12 20h40l-3 36H15z"/><path d="M23 20v-4a9 9 0 0118 0v4"/><path d="M32 50V36"/><path d="M32 42c-6 0-9-4-9-9 6 0 9 4 9 9zM32 40c5 0 8-3.5 8-8-5 0-8 3.5-8 8z"/></svg></span><p class="a" data-a="fade" style="--d:1.92s"><b>Our job:</b> make Meera the<br>credible, affordable upgrade.</p></div>
+    </div>
+    <div class="col" style="left:1345px;--d:1.32s">
+      <p class="age a" data-a="fade-up" style="--d:1.53s">29–34</p>
+      <h3 class="a" data-a="fade-up" style="--d:1.59s">The returner</h3>
+      <p class="b a" data-a="fade-up" style="--d:1.68s">Grew up on Meera, drifted to D2C in her<br>twenties. Now paying more for less proof.<br>Will come back if the brand looks like<br>her life now.</p>
+      <span class="mini"></span>
+      <div class="job"><span class="ic" style="--bgc:#fbe1a0"><svg viewBox="0 0 64 64"><path d="M32 8C34 22 40 28 54 30 40 32 34 38 32 52 30 38 24 32 10 30 24 28 30 22 32 8z"/><path d="M50 8c.6 3.6 2.4 5.4 6 6-3.6.6-5.4 2.4-6 6-.6-3.6-2.4-5.4-6-6 3.6-.6 5.4-2.4 6-6zM14 44c.5 3 2 4.5 5 5-3 .5-4.5 2-5 5-.5-3-2-4.5-5-5 3-.5 4.5-2 5-5z"/></svg></span><p class="a" data-a="fade" style="--d:2.1s"><b>Our job:</b> give her a reason<br>to say it out loud.</p></div>
+    </div>
+
+    <p class="note a" data-a="fade" style="--d:2.28s">The returner is the cheapest win available to Meera: no awareness to build, only permission to re-choose.</p>
+  </section>
+
+  <!-- ============ SLIDE 08 · Branding audit ============ -->
+  <section class="slide s08" data-duration="12000" aria-label="Slide 8: Branding audit - the honest read">
+    <div class="paper"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">BRANDING AUDIT - THE HONEST READ</p>
+    <h2 class="T lines" style="--d:0.36s">Does the branding reach 18–34 today? Partly.</h2>
+
+    <span class="pill g" style="--d:0.63s">WORKING - PROTECT THIS</span>
+    <span class="pill r" style="--d:0.72s">HOLDING IT BACK - FIX THIS</span>
+
+    <span class="cline" style="top:282px;height:268px;transform-origin:bottom;--d:0.66s"></span>
+    <span class="cline" style="top:604px;height:280px;transform-origin:top;--d:0.66s"></span>
+    
+
+    <div class="rw" style="left:144px;top:356px;width:748px;--anim:slideIn;--d:0.78s"><span class="ic" style="--bgc:#dfe0cd;--icc:#2f4a32"><svg viewBox="0 0 64 64"><circle cx="32" cy="17" r="7"/><circle cx="16" cy="23" r="5.5"/><circle cx="48" cy="23" r="5.5"/><path d="M19 52V40c0-7 6-12 13-12s13 5 13 12v12z"/><path d="M8 52V41c0-5 3.5-8.5 8-8.5 1.6 0 3 .4 4.4 1.1M56 52V41c0-5-3.5-8.5-8-8.5-1.6 0-3 .4-4.4 1.1M8 52h48"/></svg></span><span class="tick"></span><p>Name equity and household trust<br>across South India.</p><span class="sep" style="left:175px;width:573px"></span></div>
+    <div class="rw" style="left:144px;top:463px;width:748px;--anim:slideIn;--d:0.96s"><span class="ic" style="--bgc:#f3dfbf;--icc:#a8711e"><svg viewBox="0 0 64 64"><path d="M10 46L7 20l14 12 11-18 11 18 14-12-3 26z"/><path d="M12 52h40"/><circle cx="7" cy="18" r="2.5"/><circle cx="32" cy="12" r="2.5"/><circle cx="57" cy="18" r="2.5"/></svg></span><span class="tick"></span><p>Green-and-gold is distinctive<br>and already ownable.</p><span class="sep" style="left:175px;width:573px"></span></div>
+    <div class="rw" style="left:144px;top:570px;width:748px;--anim:slideIn;--d:1.14s"><span class="ic" style="--bgc:#dfe0cd;--icc:#2f4a32"><svg viewBox="0 0 64 64"><path d="M8 34h48c0 10-8 17-18 18v4H26v-4C16 51 8 44 8 34z"/><path d="M40 34L54 10"/><path d="M52 8l4 3"/><path d="M22 34c-4-6-2-13 6-15 2 7-1 12-6 15zM24 34c4-3 9-3 12 0"/></svg></span><span class="tick"></span><p>The ingredient story is true,<br>not invented for a label.</p><span class="sep" style="left:175px;width:573px"></span></div>
+    <div class="rw" style="left:144px;top:679px;width:748px;--anim:slideIn;--d:1.32s"><span class="ic" style="--bgc:#f3dfbf;--icc:#a8711e"><svg viewBox="0 0 64 64"><path d="M38 56c-2-6-1-10 2-14 4-6 4-12 2-18-3-9-11-14-19-12-8 2-13 10-12 19 .5 6 3 10 2 15-1 4-3 7-5 10"/><path d="M22 20c4 3 10 4 16 2"/><path d="M28 34c-2 4-2 8 1 12M18 40c4 4 9 5 14 3"/><path d="M42 24c5 4 8 11 8 18 0 5-2 10-5 14"/></svg></span><span class="tick"></span><p>The oil bath is a real ritual -<br>and "slow haircare" is trending globally.</p><span class="sep" style="left:175px;width:573px"></span></div>
+    <div class="rw" style="left:144px;top:786px;width:748px;--anim:slideIn;--d:1.5s"><span class="ic" style="--bgc:#dfe0cd;--icc:#2f4a32"><svg viewBox="0 0 64 64"><path d="M8 20l24-10 24 10v26L32 56 8 46z"/><path d="M8 20l24 10 24-10M32 30v26"/><path d="M20 15l24 10v8"/><rect x="14" y="34" width="9" height="8"/></svg></span><span class="tick"></span><p>Accessible pricing, wide pack ladder<br>from 180ml to 1L.</p></div>
+    <div class="rw" style="left:1068px;top:356px;width:755px;--anim:slideInR;--d:0.87s"><span class="ic" style="--bgc:#f0d5cb;--icc:#9a2f2a"><svg viewBox="0 0 64 64"><path d="M14 56V14h20v42M34 26h16v30M8 56h48"/><path d="M20 20h3M27 20h2M20 28h3M27 28h2M20 36h3M27 36h2M20 44h3M27 44h2M40 34h4M40 42h4"/></svg></span><span class="tick"></span><p>No owned brand destination - Meera lives<br>on a corporate page with 2017-era assets.</p><span class="sep" style="left:155px;width:600px"></span></div>
+    <div class="rw" style="left:1068px;top:463px;width:755px;--anim:slideInR;--d:1.05s"><span class="ic" style="--bgc:#f0d5cb;--icc:#9a2f2a"><svg viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="40" rx="4"/><circle cx="22" cy="25" r="4.5"/><path d="M8 46l15-14 11 10 8-6 14 12"/></svg></span><span class="tick"></span><p>Visual language is pack-and-claim,<br>not a life this audience recognises.</p><span class="sep" style="left:155px;width:600px"></span></div>
+    <div class="rw" style="left:1068px;top:570px;width:755px;--anim:slideInR;--d:1.23s"><span class="ic" style="--bgc:#f0d5cb;--icc:#9a2f2a"><svg viewBox="0 0 64 64"><path d="M10 54h44"/><rect x="12" y="38" width="8" height="14"/><rect x="28" y="26" width="8" height="26"/><rect x="44" y="12" width="8" height="40"/></svg></span><span class="tick"></span><p>Copy leads with percentages and asterisks:<br>television proof, not feed proof.</p><span class="sep" style="left:155px;width:600px"></span></div>
+    <div class="rw" style="left:1068px;top:679px;width:755px;--anim:slideInR;--d:1.41s"><span class="ic" style="--bgc:#f0d5cb;--icc:#9a2f2a"><svg viewBox="0 0 64 64"><path d="M32 8C34 22 40 28 54 30 40 32 34 38 32 52 30 38 24 32 10 30 24 28 30 22 32 8z"/><path d="M48 46c.4 2.4 1.6 3.6 4 4-2.4.4-3.6 1.6-4 4-.4-2.4-1.6-3.6-4-4 2.4-.4 3.6-1.6 4-4z"/></svg></span><span class="tick"></span><p>Casting and styling are interchangeable<br>with any haircare brand.</p><span class="sep" style="left:155px;width:600px"></span></div>
+    <div class="rw" style="left:1068px;top:786px;width:755px;--anim:slideInR;--d:1.59s"><span class="ic" style="--bgc:#f0d5cb;--icc:#9a2f2a"><svg viewBox="0 0 64 64"><rect x="10" y="26" width="44" height="10"/><path d="M14 36v18h36V36M32 26v28"/><path d="M32 26c-8 0-14-3-14-8 0-4 4-6 7-4 4 2 7 8 7 12zM32 26c8 0 14-3 14-8 0-4-4-6-7-4-4 2-7 8-7 12z"/></svg></span><span class="tick"></span><p>Festive mechanics (slogan contests, gold prizes)<br>read mass and skew older.</p></div>
+
+    <div style="--d:1.92s"><span class="cbox"></span><span class="cbar"></span><span class="bulb"><svg viewBox="0 0 54 62"><path d="M27 4C16 4 8 12 8 22c0 7 4 11 7 15 2 3 3 5 3 8h18c0-3 1-5 3-8 3-4 7-8 7-15C46 12 38 4 27 4z"/><path d="M19 50h16M21 56h12M24 45V34l-4-5M30 45V34l4-5"/></svg></span><span class="ctick"></span></div>
+    <p class="c1 a" data-a="fade-up" style="--d:2.22s">The identity is not the problem. <em class="shimmer" style="--gold:#a8711e;--gold-2:#e6b45a;--d:2.46s">The expression is.</em></p>
+    <p class="c2 a" data-a="fade" style="--d:2.46s">Nothing in our recommendation requires a new logo, a new palette or a repack.</p>
+  </section>
+
+  <!-- ============ SLIDE 09 · Keep / change / add ============ -->
+  <section class="slide s09" data-duration="12000" aria-label="Slide 9: What we keep, what we change, what we add">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">CONTEMPORARY, INSIDE THE GUIDELINES</p>
+    <h2 class="T lines" style="--d:0.33s">What we keep, what we change, what we add.</h2>
+    <div class="card" style="left:93px;width:571px;--d:0.66s">
+      <div class="ph"><i style="background-image:url('assets/s09-p1.jpg')"></i></div>
+      <h3 class="a" data-a="fade-up" style="left:43px;color:#1d3b2a;--d:1.08s">Keep untouched</h3>
+      <ul class="bul" style="left:79px;--d:1.23s"><li>Logo, wordmark, green and gold</li><li>Approved claim set and asterisks</li><li>"Goodness of tradition" as the brand truth</li><li>Ingredient names exactly as used on pack</li><li>One handle per platform, English-led</li></ul>
+    </div>
+    <div class="card" style="left:689px;width:556px;--d:0.84s">
+      <div class="ph"><i style="background-image:url('assets/s09-p2.jpg')"></i></div>
+      <h3 class="a" data-a="fade-up" style="left:44px;color:#a46f1d;--d:1.26s">Change the expression</h3>
+      <ul class="bul" style="left:80px;--d:1.41s"><li>Crop tighter on hair, hands, texture, steam<br>not full body model shots</li><li>Real bathroom shelves and kitchen<br>courtyards, not studio voids</li><li>Claim second, human line first</li><li>Cast across real hair textures including<br>short hair and men</li><li>Sound-off legibility on every video</li></ul>
+    </div>
+    <div class="card" style="left:1269px;width:560px;--d:1.02s">
+      <div class="ph"><i style="background-image:url('assets/s09-p3.jpg')"></i></div>
+      <h3 class="a" data-a="fade-up" style="left:44px;color:#9a3f2e;--d:1.44s">Add new assets</h3>
+      <ul class="bul tight" style="left:80px;--d:1.59s"><li>A recurring device: gold hairline rule<br>plus one ingredient macro</li><li>Meera Music as the sonic signature<br>across reels and Shorts</li><li>A standing bench of South Indian<br>creators and one trichologist voice</li><li>A Tamil ingredient lexicon used in<br>English captions</li><li>Comments and UGC treated as content,<br>not admin</li></ul>
+    </div>
+
+    <p class="foot a" data-a="fade" style="--d:2.16s">Every item in the middle and right columns is deliverable without touching brand guidelines, packaging or the claim architecture.</p>
+  </section>
+
+  <!-- ============ SLIDE 10 · The positioning ladder ============ -->
+  <section class="slide s10" data-duration="12000" aria-label="Slide 10: The positioning ladder">
+    <div class="bg" data-bg="assets/s10-bg.jpg" style="--kb-scale:1.03;--kb-x:0%;--kb-y:0%;--kb-o:60% 60%;--kb-dur:17s"></div>
+    <div class="light-sweep" style="--sweep-d:3.5s"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE POSITIONING LADDER</p>
+    <h2 class="T lines" style="--d:0.33s">Meera does not need<br>to become Moxie.<br><em>It needs to climb one rung.</em></h2>
+
+    <svg class="conn" viewBox="0 0 1920 1080">
+      <path d="M633 555C770 555 800 472 940 472" style="--d:1.14s"/><circle cx="633" cy="555" r="7" style="--d:1.02s"/>
+      <path d="M1318 372C1360 345 1395 305 1418 268S1470 165 1556 141" style="--d:2.1s"/><circle cx="1560" cy="141" r="8" style="--d:2.76s"/>
+    </svg>
+    <div class="rung" style="left:518px;top:494px;--d:0.84s">
+      <div class="no a" data-a="blur-in" style="--d:0.84s">01</div>
+      <div class="lbl a" data-a="track-in" style="--d:0.96s">HERITAGE MASS</div>
+      <p class="d a" data-a="fade-up" style="--d:1.05s">Function, family, price.<br>Trusted, bought, rarely<br>talked about.</p>
+      <div class="ln" style="width:292px;margin:14px 0 12px"></div>
+      <p class="br a" data-a="fade-up" style="--d:1.26s">Clinic Plus · Karthika ·<br><span class="me">Meera today</span></p>
+    </div>
+    <div class="rung" style="left:910px;top:496px;--d:1.32s">
+      <div class="no a" data-a="blur-in" style="--d:1.32s">02</div>
+      <div class="lbl a" data-a="track-in" style="--d:1.44s">MODERN HERITAGE</div>
+      <p class="d a" data-a="fade-up" style="--d:1.53s">Tradition made presentable.<br>Doesn’t shout, doesn’t apologise.<br>Relatable at 24 and at 44.</p>
+      <div class="ln" style="width:380px;margin:14px 0 12px"></div>
+      <p class="br a" data-a="fade-up" style="--d:1.74s">Parachute Advansed · Kama<br>Ayurveda · Mamaearth</p>
+    </div>
+    <div class="rung r3" style="left:1607px;top:90px;--d:2.34s">
+      <div class="no a" data-a="blur-in" style="--d:2.34s">03</div>
+      <div class="lbl a" data-a="track-in" style="--d:2.46s">CULTURE LED<br>CHALLENGER</div>
+      <p class="d a" data-a="fade-up" style="--d:2.55s">Identity, texture, community,<br>outstanding design.<br>Branding is the product.</p>
+      <div class="ln" style="width:236px;margin:14px 0 12px"></div>
+      <p class="br a" data-a="fade-up" style="--d:2.76s">Moxie · Indē Wild ·<br>Bare Anatomy</p>
+    </div>
+
+    <div style="--d:3.0s"><span class="box"></span><span class="climb"><svg viewBox="0 0 72 76"><path d="M4 70h64"/><path d="M14 70V54M30 70V40M46 70V24"/><path d="M58 70V8M50 16l8-8 8 8"/></svg></span><span class="btick"></span></div>
+    <p class="m1 a" data-a="fade-up" style="--d:3.3s"><b>The move:</b> heritage mass to modern heritage, using culture led <i>content</i><br>without repricing, repackaging or abandoning the 35+ base.</p>
+    <p class="foot a" data-a="fade" style="--d:3.6s">Climbing two rungs would cost the brand its price position and its existing buyer. Climbing one rung costs content, not margin.</p>
+  </section>
+
+  <!-- ============ SLIDE 11 · Section 02 ============ -->
+  <section class="slide s03 s11" data-duration="6000" aria-label="Slide 11: 02 The competition">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:1%;--kb-y:-.6%;--kb-o:70% 40%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">02</p>
+    <h2 class="T split" style="--d:0.54s">The competition</h2>
+    <p class="sub lines" style="--d:1.14s">By product line, by hair concern, and - the part most audits skip - by how<br>they actually behave on a feed.</p>
+  </section>
+
+  <!-- ============ SLIDE 12 · Competitive map ============ -->
+  <section class="slide s12" data-duration="11250" aria-label="Slide 12: The competitive map">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE COMPETITIVE MAP</p>
+    <h2 class="T lines" style="--d:0.33s">Where Meera sits, and where the content should take it.</h2>
+
+    <div class="map" style="--d:0.6s"></div>
+    <svg class="axes" viewBox="0 0 1920 1080">
+      <line x1="961" y1="575" x2="124" y2="575" style="--d:0.78s"/>
+      <line x1="961" y1="575" x2="1805" y2="575" style="--d:0.78s"/>
+      <line x1="961" y1="575" x2="961" y2="342" style="--d:0.78s"/>
+      <line x1="961" y1="575" x2="961" y2="887" style="--d:0.78s"/>
+      <g style="--d:0.78s"><path class="hd" d="M118 575l14-7v14z"/><path class="hd" d="M1810 575l-14-7v14z"/><path class="hd" d="M961 336l-7 14h14z"/><path class="hd" d="M961 891l-7-14h14z"/></g>
+      <path class="trip" d="M429 735C540 735 600 640 660 583" style="--d:2.64s"/>
+    </svg>
+    <span class="ax a" data-a="fade" style="left:961px;top:293px;--d:1.14s">More premium, more aspirational</span>
+    <span class="ax a" data-a="fade" style="left:961px;top:915px;--d:1.14s">More mass, more functional</span>
+    <span class="end a" data-a="fade-up" style="left:101px;--d:1.14s">Tradition-led</span>
+    <span class="end a" data-a="fade-up" style="right:94px;--d:1.14s">Science-led</span>
+
+    <span class="pill" style="left:165px;top:348px;width:289px;--d:1.2s">Kama Ayurveda</span>
+    <span class="pill" style="left:516px;top:395px;width:218px;--d:1.27s">Indē Wild</span>
+    <span class="pill" style="left:246px;top:464px;width:279px;--d:1.34s">Forest Essentials</span>
+    <span class="pill" style="left:1308px;top:348px;width:203px;--d:1.41s">Moxie</span>
+    <span class="pill" style="left:1225px;top:468px;width:253px;--d:1.48s">Minimalist</span>
+    <span class="pill" style="left:1517px;top:428px;width:261px;--d:1.55s">Bare Anatomy</span>
+    <span class="pill" style="left:307px;top:624px;width:227px;--d:1.62s">Patanjali</span>
+    <span class="pill" style="left:572px;top:652px;width:292px;--d:1.69s">Parachute Advanced</span>
+    <span class="pill" style="left:459px;top:774px;width:217px;--d:1.76s">Karthika</span>
+    <span class="pill" style="left:726px;top:755px;width:216px;--d:1.84s">Indulekha</span>
+    <span class="pill" style="left:1048px;top:652px;width:219px;--d:1.83s">Pantene</span>
+    <span class="pill" style="left:1304px;top:652px;width:227px;--d:1.9s">Mamaearth</span>
+    <span class="pill" style="left:1053px;top:760px;width:237px;--d:1.97s">Clinic Plus</span>
+    <span class="pill" style="left:1479px;top:755px;width:295px;--d:2.05s">Head &amp; Shoulders</span>
+    <span class="pill today" style="left:179px;top:711px;width:250px;--d:2.22s">Meera today</span>
+    <span class="pill goal" style="left:628px;top:519px;width:362px;--d:3.12s">Meera, where we take it</span>
+  </section>
+
+  <!-- ============ SLIDE 13 · Shampoo competitors ============ -->
+  <section class="slide s13" data-duration="12000" aria-label="Slide 13: Competitors by product line - shampoo">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">COMPETITORS BY PRODUCT LINE - SHAMPOO</p>
+    <h2 class="T lines" style="--d:0.33s">Shampoo: who owns which concern, and where we get in.</h2>
+
+    <table class="tbl" style="--d:0.72s">
+      <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup>
+      <thead><tr><th>Concern</th><th>Who owns it now</th><th>Their line</th><th>Meera’s wedge</th></tr></thead>
+      <tbody>
+        <tr style="--i:0"><td>Dandruff</td><td>Head &amp; Shoulders, Clinic Plus,<br>Minimalist, Sebamed</td><td>Clinical proof, “does yours actually<br>work”</td><td style="--i:0">Chemparathi Thaali: hibiscus, small onion,<br>fenugreek - the Tamil remedy, in a bottle.</td></tr>
+        <tr style="--i:1"><td>Hairfall and breakage</td><td>Parachute Advanced Protein,<br>Indulekha, Mamaearth Onion</td><td>Protein and onion science,<br>campaign films</td><td style="--i:1">Shikakai plus badam, a 97% claim, and the oil<br>bath nobody else can credibly own.</td></tr>
+        <tr style="--i:2"><td>Frizz, smooth and shine</td><td>Pantene, Dove, Tresemmé, Moxie</td><td>Salon finish, texture-specific<br>routines</td><td style="--i:2">Humidity-honest softness: Indian weather,<br>Indian water, no salon required.</td></tr>
+        <tr style="--i:3"><td>Scalp and clean beauty</td><td>Moxie, Bare Anatomy, Minimalist,<br>Indē Wild</td><td>Actives, no-sulphate, hair-type<br>diagnostics</td><td style="--i:3">Meera Enrich is already no-sulphate and<br>barely spoken about - an unused asset.</td></tr>
+        <tr style="--i:4"><td>Convenience, 2-in-1</td><td>Dove, Pantene 2-in-1, Enrich 1-Step<br>Spa</td><td>Time-saving, fewer steps</td><td style="--i:4">Meera created the shampoo-mask category.<br>Own the words before someone else names it.</td></tr>
+      </tbody>
+    </table>
+    <p class="note a" data-a="fade-up" style="--d:2.88s">Observation: every competitor above wins a concern with language. <b>None of them has a ritual.</b> That is the asymmetry we build on.</p>
+  </section>
+
+  <!-- ============ SLIDE 14 · Powder and oil ============ -->
+  <section class="slide s14" data-duration="12750" aria-label="Slide 14: Competitors by product line - powder and oil">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">COMPETITORS BY PRODUCT LINE - POWDER AND OIL</p>
+    <h2 class="T lines" style="--d:0.33s">Two lines where the competition is weak and distracted.</h2>
+    <span class="vl" style="--d:0.66s"></span>
+    <div class="ph" style="left:96px;width:358px;--d:0.66s"><i style="background-image:url('assets/s14-p1.jpg')"></i></div>
+    <div class="ph" style="left:1005px;width:354px;--d:0.9s"><i style="background-image:url('assets/s14-p2.jpg')"></i></div>
+    <div class="txt" style="left:489px;top:296px;--d:0.96s">
+      <h3 class="lines" style="--d:0.96s">Herbal Hairwash<br>Powder</h3><span class="gl"></span>
+      <div class="a" data-a="fade-up" style="--d:1.29s"><div class="k">WHO ELSE PLAYS</div><p style="--mb:37px">Patanjali, Khadi Natural, Banjara's,<br>Indulekha Bringha, and a long tail of<br>unbranded local shikakai.</p></div>
+      <div class="a" data-a="fade-up" style="--d:1.47s"><div class="k">HOW THEY SELL IT</div><p style="--mb:36px">Purity and price. Ingredient lists, no story,<br>almost no video. Social presence is<br>catalogue-grade.</p></div>
+      <div class="a" data-a="fade-up" style="--d:1.65s"><div class="k">THE OPENING</div><p style="--mb:0px">Nobody has made the oil bath aspirational.<br>“Wash day” is one of the biggest haircare<br>content formats in the world and no Indian<br>brand owns the Indian version of it.<br>Meera’s powder is wash day.</p></div>
+    </div>
+    <div class="txt" style="left:1401px;top:299px;--d:1.2s">
+      <h3 class="lines" style="--d:1.2s">Coconut and<br>herbal oil</h3><span class="gl"></span>
+      <div class="a" data-a="fade-up" style="--d:1.53s"><div class="k">WHO ELSE PLAYS</div><p style="--mb:37px">Parachute, which is effectively the<br>category name, plus Nihar, Coco Soul,<br>Indulekha, Dabur Amla, Bajaj Almond Drops.</p></div>
+      <div class="a" data-a="fade-up" style="--d:1.71s"><div class="k">HOW THEY SELL IT</div><p style="--mb:50px">Purity, nourishment, mother-and-child warmth.<br>Parachute has moved up into shampoo;<br>the oil conversation is now mostly price-led.</p></div>
+      <div class="a" data-a="fade-up" style="--d:1.89s"><div class="k">THE OPENING</div><p style="--mb:0px">Stop selling oil as a product and sell it as<br>the <i>first half of a wash</i>. Oil plus powder,<br>or oil plus mask, is a routine only Meera<br>can sell complete.</p></div>
+    </div>
+    <span class="hl" style="--d:2.16s"></span>
+    <p class="foot a" data-a="fade" style="--d:2.4s">Strategic consequence: oil, powder and the mask are not three SKUs competing for calendar space - they are one routine told in three parts.</p>
+  </section>
+
+  <!-- ============ SLIDE 15 · Competitors by behaviour ============ -->
+  <section class="slide s15" data-duration="12000" aria-label="Slide 15: Competitors by behaviour">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">COMPETITORS BY BEHAVIOUR</p>
+    <h2 class="T a" data-a="fade-up" style="--d:0.33s">How they actually win <span data-count data-delay="0.36" data-dur="1400">18–34</span> on a feed.</h2>
+    <div class="frame" style="--d:0.6s"></div>
+    <table class="tbl" style="--d:0.72s">
+      <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup>
+      <thead><tr><th>Brand</th><th>What they post</th><th>Creator approach</th><th>Why 18–34 respond</th></tr></thead>
+      <tbody>
+        <tr style="--i:0"><td style="height:113px;--pt:18px">Moxie</td><td style="--pt:18px">Hair-type education, diagnostics, honest<br>before-and-after on real curls and waves</td><td style="--pt:18px">Micro-creators chosen by hair texture,<br>not reach</td><td style="--pt:18px">“Finally made for my hair” - specificity<br>reads as competence</td></tr>
+        <tr style="--i:1"><td style="height:138px;--pt:18px">Indē Wild</td><td style="--pt:18px">Identity first, product second. High-<br>production culture moments, few SKUs,<br>heavy repetition of heroes</td><td style="--pt:18px">Founder is the face; community is the<br>moat</td><td style="--pt:18px">Pride. A global Indian brand they can be<br>seen using</td></tr>
+        <tr style="--i:2"><td style="height:103px;--pt:14px">Mamaearth</td><td style="--pt:14px">High volume, offer-led, goodness-inside<br>messaging, constant new launches</td><td style="--pt:14px">Celebrity plus mega and mid-tier<br>influencers at scale</td><td style="--pt:14px">Ubiquity and reassurance. They see it<br>everywhere</td></tr>
+        <tr style="--i:3"><td style="height:138px;--pt:18px">Clinic Plus</td><td style="--pt:18px">Mother-and-daughter equity, TV cut-<br>downs, regional reach, strong value<br>messaging</td><td style="--pt:18px">Little creator work; mass media does<br>the job</td><td style="--pt:18px">Familiarity and price, more than desire</td></tr>
+        <tr style="--i:4"><td style="height:100px;--pt:16px">Kama Ayurveda</td><td style="--pt:16px">Restraint. Ritual, texture close-ups,<br>minimal copy, generous white space</td><td style="--pt:16px">Few, curated, aesthetic-led<br>collaborators</td><td style="--pt:16px">Taste. The feed itself signals premium</td></tr>
+      </tbody>
+    </table>
+    <span class="hl" style="--d:2.04s"></span>
+    <p class="foot a" data-a="fade" style="--d:2.28s">The pattern: the brands winning this age group are either hyper-specific (Moxie) or hyper-confident (Indē Wild, Kama). Nobody wins by being generically pleasant.</p>
+  </section>
+
+  <!-- ============ SLIDE 16 · The whitespace (puzzle) ============ -->
+  <section class="slide s16" data-duration="12750" aria-label="Slide 16: The whitespace - four things only Meera can say">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE WHITESPACE</p>
+    <h2 class="T lines" style="--d:0.3s">Four things only Meera can say.</h2>
+    <div class="pz" style="left:73px;top:213px;width:926px;height:438px;--fx:-900px;--fy:-500px;--fr:-28deg;--d:0.6s;z-index:1">
+      <div class="clip" style="clip-path:path('M54 40 L872 40 Q886 40 886 54 L886 184 A30 30 0 1 0 886 228 L886 384 Q886 398 872 398 L822 398 A30 30 0 1 0 778 398 L54 398 Q40 398 40 384 L40 54 Q40 40 54 40Z')">
+        <div class="card"></div>
+        <div class="ph"><i style="background-image:url('assets/s16-p1.jpg')"></i></div>
+      </div>
+      <svg class="edge" viewBox="0 0 926 438"><path d="M54 40 L872 40 Q886 40 886 54 L886 184 A30 30 0 1 0 886 228 L886 384 Q886 398 872 398 L822 398 A30 30 0 1 0 778 398 L54 398 Q40 398 40 384 L40 54 Q40 40 54 40Z"/></svg>
+      <div class="tx" style="left:480px;top:70px;--d:1.29s">
+        <div class="nrow"><span class="no">01</span><span class="nl"></span></div>
+        <h3>Own wash day</h3>
+        <p>The oil bath is the only haircare ritual<br>in India that is both genuinely<br>traditional and natively content-shaped.<br>Globally, "wash day" is a format with<br>millions of views. No Indian brand<br>owns the Indian version.</p>
+      </div>
+    </div>
+    <div class="pz" style="left:919px;top:213px;width:929px;height:438px;--fx:900px;--fy:-520px;--fr:24deg;--d:0.87s;z-index:2">
+      <div class="clip" style="clip-path:path('M54 40 L875 40 Q889 40 889 54 L889 384 Q889 398 875 398 L822 398 A30 30 0 1 0 778 398 L54 398 Q40 398 40 384 L40 228 A30 30 0 1 1 40 184 L40 54 Q40 40 54 40Z')">
+        <div class="card"></div>
+        <div class="ph"><i style="background-image:url('assets/s16-p2.jpg')"></i></div>
+      </div>
+      <svg class="edge" viewBox="0 0 929 438"><path d="M54 40 L875 40 Q889 40 889 54 L889 384 Q889 398 875 398 L822 398 A30 30 0 1 0 778 398 L54 398 Q40 398 40 384 L40 228 A30 30 0 1 1 40 184 L40 54 Q40 40 54 40Z"/></svg>
+      <div class="tx" style="left:493px;top:70px;--d:1.56s">
+        <div class="nrow"><span class="no">02</span><span class="nl"></span></div>
+        <h3>Own the lexicon</h3>
+        <p>Kunkudukai. Chemparathi. Shikakai.<br>Badam. These words are on Meera’s<br>packs already and nowhere in the<br>category’s English-language feed.<br>Make them the cool words, not the<br>regional ones.</p>
+      </div>
+    </div>
+    <div class="pz" style="left:73px;top:571px;width:926px;height:416px;--fx:-880px;--fy:520px;--fr:22deg;--d:1.14s;z-index:3">
+      <div class="clip" style="clip-path:path('M54 40 L778 40 A30 30 0 1 1 822 40 L872 40 Q886 40 886 54 L886 193 A30 30 0 1 0 886 237 L886 362 Q886 376 872 376 L54 376 Q40 376 40 362 L40 54 Q40 40 54 40Z')">
+        <div class="card"></div>
+        <div class="ph"><i style="background-image:url('assets/s16-p3.jpg')"></i></div>
+      </div>
+      <svg class="edge" viewBox="0 0 926 416"><path d="M54 40 L778 40 A30 30 0 1 1 822 40 L872 40 Q886 40 886 54 L886 193 A30 30 0 1 0 886 237 L886 362 Q886 376 872 376 L54 376 Q40 376 40 362 L40 54 Q40 40 54 40Z"/></svg>
+      <div class="tx" style="left:480px;top:70px;--d:1.83s">
+        <div class="nrow"><span class="no">03</span><span class="nl"></span></div>
+        <h3>Own the new category</h3>
+        <p>Meera created the shampoo mask.<br>Right now a buyer searching<br>"shampoo mask" finds a product page.<br>She should find Meera explaining<br>the category it invented.</p>
+      </div>
+    </div>
+    <div class="pz" style="left:919px;top:571px;width:929px;height:416px;--fx:920px;--fy:540px;--fr:-26deg;--d:1.41s;z-index:4">
+      <div class="clip" style="clip-path:path('M54 40 L778 40 A30 30 0 1 1 822 40 L875 40 Q889 40 889 54 L889 362 Q889 376 875 376 L54 376 Q40 376 40 362 L40 237 A30 30 0 1 1 40 193 L40 54 Q40 40 54 40Z')">
+        <div class="card"></div>
+        <div class="ph"><i style="background-image:url('assets/s16-p4.jpg')"></i></div>
+      </div>
+      <svg class="edge" viewBox="0 0 929 416"><path d="M54 40 L778 40 A30 30 0 1 1 822 40 L875 40 Q889 40 889 54 L889 362 Q889 376 875 376 L54 376 Q40 376 40 362 L40 237 A30 30 0 1 1 40 193 L40 54 Q40 40 54 40Z"/></svg>
+      <div class="tx" style="left:493px;top:70px;--d:2.1s">
+        <div class="nrow"><span class="no">04</span><span class="nl"></span></div>
+        <h3 style="font-size:35.5px">Heritage without hierarchy</h3>
+        <p>Meera is the only brand that can truthfully<br>show a 22-year-old and her grandmother<br>reaching for the same bottle. Challengers<br>cannot fake that. Mass brands cannot<br>make it aspirational. We can do both.</p>
+      </div>
+    </div>
+    <svg class="snap" viewBox="0 0 1920 1080"><circle cx="959" cy="419" r="26" style="--d:1.56s"/><circle cx="873" cy="611" r="26" style="--d:1.83s"/><circle cx="1719" cy="611" r="26" style="--d:2.1s"/><circle cx="959" cy="786" r="26" style="--d:2.1s"/></svg>
+    <span class="hl" style="--d:2.34s"></span>
+    <p class="foot a" data-a="fade" style="--d:2.52s">These four are the growth opportunities the brief asked us to identify. Each one maps to a content pillar on the next section.</p>
+  </section>
+
+  <!-- ============ SLIDE 17 · Section 03 ============ -->
+  <section class="slide s03 s17" data-duration="6000" aria-label="Slide 17: 03 The strategy">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:-1%;--kb-y:-.6%;--kb-o:40% 30%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">03</p>
+    <h2 class="T split" style="--d:0.54s">The strategy</h2>
+    <p class="sub lines" style="--d:1.14s">One idea, a tone of voice that survives a claim sheet, five content pillars, and<br>a clear job for each of the three hero products.</p>
+  </section>
+
+  <!-- ============ SLIDE 18 · Grown on Meera ============ -->
+  <section class="slide s18" data-duration="11250" aria-label="Slide 18: The content platform - Grown on Meera">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE CONTENT PLATFORM</p>
+    <h1 class="T split" style="--d:0.3s;position:absolute;left:98px;top:112px;font-family:var(--serif-display);font-weight:700;font-size:132px;line-height:1.1;letter-spacing:-.03em;color:#14281e;white-space:nowrap">Grown on Meera.</h1>
+    <p class="lead" style="--d:0.72s"><span class="w" style="--i:0">Almost</span> <span class="w" style="--i:1">every</span> <span class="w" style="--i:2">Indian</span> <span class="w" style="--i:3">with</span> <span class="w" style="--i:4">good</span> <span class="w" style="--i:5">hair</span> <span class="w" style="--i:6">had</span> <span class="w" style="--i:7">someone</span> <span class="w" style="--i:8">who</span> <span class="w" style="--i:9">did</span> <span class="w" style="--i:10">this</span> <span class="w" style="--i:11">for</span> <span class="w" style="--i:12">them.</span> <span class="w" style="--i:13">We</span> <span class="w" style="--i:14">take</span> <span class="w" style="--i:15">that</span><br><span class="w" style="--i:16">person’s</span> <span class="w" style="--i:17">routine</span> <span class="w" style="--i:18">and</span> <span class="w" style="--i:19">make</span> <span class="w" style="--i:20">it</span> <span class="w" style="--i:21">yours</span> <span class="w" style="--i:22">-</span> <span class="w" style="--i:23">in</span> <span class="w" style="--i:24">a</span> <span class="w" style="--i:25">format</span> <span class="w" style="--i:26">that</span> <span class="w" style="--i:27">fits</span> <span class="w" style="--i:28">your</span> <span class="w" style="--i:29">Sunday,</span> <span class="w" style="--i:30">your</span> <span class="w" style="--i:31">shelf</span> <span class="w" style="--i:32">and</span><br><span class="w" style="--i:33">your</span> <span class="w" style="--i:34">feed.</span></p>
+    <div class="ph" style="left:56px;width:584px;--d:1.26s"><i style="background-image:url('assets/s18-p1.jpg')"></i></div>
+    <div class="ph" style="left:665px;width:593px;--d:1.47s"><i style="background-image:url('assets/s18-p2.jpg')"></i></div>
+    <div class="ph" style="left:1280px;width:579px;--d:1.68s"><i style="background-image:url('assets/s18-p3.jpg')"></i></div>
+    <div class="cap a" data-a="fade-up" style="left:114px;--d:1.74s"><h3>It is a boast, not a memory.</h3><p>Not “remember this” - “I use this”.</p></div>
+    <div class="cap a" data-a="fade-up" style="left:736px;--d:1.95s"><h3>It works for every product.</h3><p>Oil, powder, paste, shampoo,<br>mask - all one routine.</p></div>
+    <div class="cap a" data-a="fade-up" style="left:1325px;--d:2.16s"><h3>It never drops the 35+ buyer.</h3><p>She is the one it was grown on.</p></div>
+  </section>
+
+  <!-- ============ SLIDE 19 · Tone of voice ============ -->
+  <section class="slide s19" data-duration="11250" aria-label="Slide 19: Tone of voice">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">TONE OF VOICE</p>
+    <h2 class="T lines" style="--d:0.33s">Same claims. Same ingredients. Different framing.</h2>
+    <table class="tbl" style="--d:0.72s">
+      <colgroup><col class="c1"><col></colgroup>
+      <thead><tr><th>Approved today</th><th>Same claim, written for a feed</th></tr></thead>
+      <tbody>
+        <tr style="--i:0"><td style="height:122px"><span class="tx">"Reduces hairfall up to 97%*"</span></td><td><span class="tx">Shikakai cleans. Badam holds it together. 97% less breakage, if you want<br>the number.*</span></td></tr>
+        <tr style="--i:1"><td style="height:86px"><span class="tx">"Goodness of tradition"</span></td><td><span class="tx">Your grandmother's shikakai. Minus the grinding.</span></td></tr>
+        <tr style="--i:2"><td style="height:86px"><span class="tx">"For strong and healthy hair"</span></td><td><span class="tx">Wash day, done in one step.</span></td></tr>
+        <tr style="--i:3"><td style="height:129px"><span class="tx">"New Meera Anti-Dandruff Shampoo with small<br>onions and fenugreek"</span></td><td><span class="tx">Chemparathi, small onion, fenugreek. Post-monsoon flakes don't stand<br>a chance.</span></td></tr>
+        <tr style="--i:4"><td style="height:87px"><span class="tx">"Up to 120 hrs intense conditioning"</span></td><td><span class="tx">One wash on Sunday. Still soft on Thursday.</span></td></tr>
+      </tbody>
+    </table>
+    <p class="note a" data-a="fade" style="--d:3.36s">Rules: claim and asterisk stay verbatim, one idea per caption, ingredient names stay in Tamil, no abstract beauty language, and the point lands in the first two lines before<br>fold.</p>
+  </section>
+
+  <!-- ============ SLIDE 20 · Content pillars ============ -->
+  <section class="slide s20" data-duration="12000" aria-label="Slide 20: Content pillars">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">CONTENT PILLARS</p>
+    <h2 class="T lines" style="--d:0.3s">Five pillars.<br>Every asset belongs to exactly one.</h2>
+    <span class="vl" style="--d:0.54s"></span>
+    <div class="bal">
+      <div class="k a" data-a="track-in" style="--d:0.6s">HOW IT BALANCES</div>
+      <p class="a" data-a="fade-up" style="--d:0.69s">Roughly <span data-count data-delay="0.72">70</span>% of every month<br>sits on the three hero products.<br>The remaining <span data-count data-delay="0.72">30</span>% carries BAU<br>range, community and culture.</p>
+      <div class="q a" data-a="fade" style="--d:0.9s">Reviewed and re-weighted quarterly.</div>
+    </div>
+    <div class="arch" style="left:62px;width:356px;--d:0.78s"><i style="background-image:url('assets/s20-a1.jpg')"></i>
+      <div class="in" style="left:49px">
+        <div class="pct"><span data-count data-delay="1.2" data-dur="1300">30</span><small>%</small></div>
+        <div class="lb">PILLAR ONE</div><h3>Wash Day</h3><p class="bd">The oil bath, the powder,<br>the paste, the Sunday<br>routine. Slow, tactile,<br>satisfying.</p><span class="ds"></span><p class="fm">Reels, UGC, sound-led,<br>Shorts</p>
+      </div>
+    </div>
+    <div class="arch" style="left:428px;width:354px;--d:0.95s"><i style="background-image:url('assets/s20-a2.jpg')"></i>
+      <div class="in" style="left:54px">
+        <div class="pct"><span data-count data-delay="1.37" data-dur="1300">20</span><small>%</small></div>
+        <div class="lb">PILLAR TWO</div><h3>Ingredient Truth</h3><p class="bd">Kunkudukai, chemparathi,<br>badam, shikakai -<br>what each one actually<br>does, in plain words.</p><span class="ds"></span><p class="fm">Carousels, macro statics,<br>threads</p>
+      </div>
+    </div>
+    <div class="arch" style="left:792px;width:348px;--d:1.12s"><i style="background-image:url('assets/s20-a3.jpg')"></i>
+      <div class="in" style="left:55px">
+        <div class="pct"><span data-count data-delay="1.54" data-dur="1300">20</span><small>%</small></div>
+        <div class="lb">PILLAR THREE</div><h3>Hair Problems,<br>Plainly</h3><p class="bd">Dandruff, frizz, breakage,<br>humidity, hard water.<br>Concern in, product out.</p><span class="ds"></span><p class="fm">Demo reels, myth-busting,<br>Shorts</p>
+      </div>
+    </div>
+    <div class="arch" style="left:1151px;width:353px;--d:1.28s"><i style="background-image:url('assets/s20-a4.jpg')"></i>
+      <div class="in" style="left:60px">
+        <div class="pct"><span data-count data-delay="1.7" data-dur="1300">15</span><small>%</small></div>
+        <div class="lb">PILLAR FOUR</div><h3>Grown on Meera</h3><p class="bd">Generational, regional,<br>funny, shared. Community<br>and comments turned<br>into posts.</p><span class="ds"></span><p class="fm">UGC, stitches, text-led<br>statics</p>
+      </div>
+    </div>
+    <div class="arch" style="left:1515px;width:341px;--d:1.45s"><i style="background-image:url('assets/s20-a5.jpg')"></i>
+      <div class="in" style="left:62px">
+        <div class="pct"><span data-count data-delay="1.87" data-dur="1300">15</span><small>%</small></div>
+        <div class="lb">PILLAR FIVE</div><h3>Moments &amp;<br>Momentum</h3><p class="bd">Festivals, Meera Music,<br>launches, trends and<br>topicals with a 6-hour<br>turnaround.</p><span class="ds"></span><p class="fm">Topicals, X-first, Stories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 21 · Three hero products ============ -->
+  <section class="slide s21" data-duration="12750" aria-label="Slide 21: The three hero products">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">THE THREE HERO PRODUCTS</p>
+    <h2 class="T lines" style="--d:0.3s">Three products, three different jobs.</h2>
+    <span class="vl" style="left:658px;--d:1.08s"></span><span class="vl" style="left:1263px;--d:1.14s"></span>
+    <span class="glow" style="left:163px;top:172px;--d:0.6s"></span>
+    <div class="btl" style="left:230px;top:161px;width:287px;height:482px;--d:0.6s;--r:-7deg"><i style="background-image:url('assets/s21-b1.jpg')"></i></div>
+    <div class="col" style="left:108px;--d:1.44s"><h3 style="--i:0">2-in-1 Shampoo Mask</h3><p class="q" style="--i:1">"One step. Still soft on Thursday."</p><p class="r" style="--i:2"><b>Job:</b> teach a category Meera invented,<br>and own its name in search.</p><p class="r" style="--i:3"><b>Formats:</b> one-step demos, split-screen<br>against a three-product routine, “what is<br>a shampoo mask” carousel and thread,<br>day-1-to-day-5 softness test.</p><p class="r" style="--i:4"><b>Lead metric:</b> saves and branded search<br>for “shampoo mask”.</p></div>
+    <span class="glow" style="left:737px;top:166px;--d:0.84s"></span>
+    <div class="btl" style="left:792px;top:149px;width:310px;height:494px;--d:0.84s;--r:5deg"><i style="background-image:url('assets/s21-b2.jpg')"></i></div>
+    <div class="col" style="left:714px;--d:1.65s"><h3 style="--i:0">Anti-Dandruff Shampoo</h3><p class="q" style="--i:1">"Chemparathi, small onion, fenugreek."</p><p class="r" style="--i:2"><b>Job:</b> convert a concern, against brands<br>that sound like pharmacies.</p><p class="r" style="--i:3"><b>Formats:</b> scalp close-ups, post-monsoon<br>flake content, myth-busting, before-and-after<br>on real scalps, one trichologist explainer<br>per quarter.</p><p class="r" style="--i:4"><b>Lead metric:</b> comment-to-DM queries<br>and link clicks.</p></div>
+    <span class="glow" style="left:1363px;top:172px;--d:1.08s"></span>
+    <div class="btl" style="left:1412px;top:161px;width:322px;height:482px;--d:1.08s;--r:-5deg"><i style="background-image:url('assets/s21-b3.jpg')"></i></div>
+    <div class="col" style="left:1319px;--d:1.86s"><h3 style="--i:0">Smooth &amp; Shine Shampoo</h3><p class="q" style="--i:1">"Soft hair, no drama."</p><p class="r" style="--i:2"><b>Job:</b> build everyday habit and make<br>Meera photographable.</p><p class="r" style="--i:3"><b>Formats:</b> get-ready-with-me, the Chennai<br>humidity test, three-day hair, texture close-ups,<br>UGC-style first-person reviews.</p><p class="r" style="--i:4"><b>Lead metric:</b> reach among 18–34 and<br>share rate.</p></div>
+    <span class="hl" style="--d:2.64s"></span>
+    <p class="foot a" data-a="fade" style="--d:2.82s">One hero product leads every week. They never compete for the same slot, and no week runs without at least one.</p>
+  </section>
+
+  <!-- ============ SLIDE 22 · Sample creative concepts ============ -->
+  <section class="slide s22" data-duration="12750" aria-label="Slide 22: Sample creative concepts">
+    <div class="paper"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">SAMPLE CREATIVE CONCEPTS</p>
+    <h2 class="T lines" style="--d:0.3s">Four we would shoot in month one.</h2>
+    <div class="cd" style="left:135px;top:281px;width:803px;height:330px;--d:0.6s;--fx:-60px"><div class="im" style="width:356px"><i style="background-image:url('assets/s22-1.jpg')"></i></div><div class="tx"><div class="no" style="--i:0">01<span class="u"></span></div><h3 style="--i:1">"Kunkudukai, Pronounced"</h3><p class="bd" style="--i:2">15-second reel. Non-Tamil speakers<br>try to say the ingredient names off the<br>pack, badly and delightedly. Ends on<br>what kunkudukai actually does.<br>The joke carries the education.</p><span class="ds" style="--i:3"></span><p class="mt" style="--i:4">Ingredient Truth · Smooth &amp; Shine ·<br>IG, Shorts, X clip</p></div></div>
+    <div class="cd" style="left:973px;top:281px;width:815px;height:330px;--d:0.75s;--fx:60px"><div class="im" style="width:466px"><i style="background-image:url('assets/s22-2.jpg')"></i></div><div class="tx"><div class="no" style="--i:0">02<span class="u"></span></div><h3 style="--i:1">"Three Steps vs One"</h3><p class="bd" style="--i:2">Split screen, two bathrooms, same<br>clock. One flatmate does shampoo,<br>conditioner, mask. The other does<br>the Shampoo Mask. Same hair at<br>the end, eleven minutes apart.</p><span class="ds" style="--i:3"></span><p class="mt" style="--i:4">Hair Problems · Shampoo Mask ·<br>IG Reels, Shorts, FB</p></div></div>
+    <div class="cd" style="left:135px;top:629px;width:803px;height:342px;--d:0.9s;--fx:-60px"><div class="im" style="width:346px"><i style="background-image:url('assets/s22-3.jpg')"></i></div><div class="tx"><div class="no" style="--i:0">03<span class="u"></span></div><h3 style="--i:1">"Things My Amma Said<br>During An Oil Bath"</h3><p class="bd" style="--i:2">Text-led carousel, then a reel version.<br>Lines everyone recognises - “sit still”,<br>“it's not that hot”, “this is why your<br>hair is good”. Powder and oil in frame<br>throughout.</p><span class="ds" style="--i:3"></span><p class="mt" style="--i:4">Grown on Meera · Powder + Oil ·<br>IG, FB, X</p></div></div>
+    <div class="cd" style="left:973px;top:629px;width:815px;height:342px;--d:1.05s;--fx:60px"><div class="tx"><div class="no" style="--i:0">04<span class="u"></span></div><h3 style="--i:1;font-size:29px">"The Chennai Humidity Test"</h3><p class="bd" style="--i:2">Same hair at 9am and at 6pm, 80%+<br>humidity, timestamp on screen, no<br>retouching. Repeatable monthly<br>across cities - Chennai, Kochi,<br>Mumbai, Bengaluru - and it builds<br>its own series.</p><span class="ds" style="--i:3"></span><p class="mt" style="--i:4">Hair Problems · Smooth &amp; Shine ·<br>Shorts, Reels</p></div></div>
+    <div class="pol" style="left:1428px;top:662px;width:150px;height:240px;--rot:-3deg;--d:1.5s"><b>9:00 AM</b><i style="background-image:url('assets/s22-h1.jpg')"></i></div>
+    <div class="pol" style="left:1590px;top:682px;width:144px;height:242px;--rot:4deg;--tr:3deg;--d:1.71s"><b>6:00 PM</b><i style="background-image:url('assets/s22-h2.jpg')"></i></div>
+    <svg class="arw" viewBox="0 0 1920 1080"><path d="M1430 930C1420 930 1412 920 1418 905" style="--d:2.1s"/><path d="M1738 842C1738 822 1726 812 1712 810" style="--d:2.22s"/></svg>
+    <span class="hand" style="left:1446px;top:916px;--d:2.16s">Same hair.</span>
+    <span class="hand" style="left:1730px;top:850px;--d:2.28s">80%+<br>humidity.<br>Still good.</span>
+    <span class="hl" style="--d:2.52s"></span>
+    <p class="foot a" data-a="fade" style="--d:2.7s">All four are shootable in a single production day with two talents, one practical bathroom location and existing product stock.</p>
+  </section>
+
+  <!-- ============ SLIDE 23 · Section 04 ============ -->
+  <section class="slide s03 s23" data-duration="6000" aria-label="Slide 23: 04 The platforms">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:1%;--kb-y:.6%;--kb-o:60% 60%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">04</p>
+    <h2 class="T split" style="--d:0.54s">The platforms</h2>
+    <p class="sub lines" style="--d:1.14s">Four handles, one language, four different jobs. Instagram and Facebook<br>share a core. X and YouTube do not - and treating them as resize jobs is<br>why most brands waste both.</p>
+  </section>
+
+  <!-- ============ SLIDE 24 · Platform roles ============ -->
+  <section class="slide s24" data-duration="10500" aria-label="Slide 24: Platform roles at a glance">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eyebrow a" data-a="track-in" style="--d:0.18s">PLATFORM ROLES AT A GLANCE</p>
+    <h2 class="T lines" style="--d:0.33s">One handle each. Four jobs.</h2>
+    <table class="tbl" style="--d:0.66s">
+      <colgroup><col class="c1"><col class="c2"><col class="c3"><col></colgroup>
+      <tbody>
+        <tr class="top" style="--i:0"><td><span class="tx">Instagram</span></td><td><span class="tx">Primary brand home for 18–34</span></td><td><span class="tx">Reels, carousels, Stories, UGC</span></td><td><span class="tx">12–14 posts, 15 Stories · warm,<br>specific</span></td></tr>
+        <tr style="--i:1"><td><span class="tx">Facebook</span></td><td><span class="tx">Reach, and the busiest comment<br>base</span></td><td><span class="tx">Reel cross-posts, link posts, longer captions</span></td><td><span class="tx">10–12 posts · plainer, benefit-first</span></td></tr>
+        <tr style="--i:2"><td><span class="tx">X</span></td><td><span class="tx">Conversation, topicals and service</span></td><td><span class="tx">Text-first posts, threads, polls, replies</span></td><td><span class="tx">15–20 posts · dry, quick, opinionated</span></td></tr>
+        <tr style="--i:3"><td><span class="tx">YouTube</span></td><td><span class="tx">Search, depth and cheap reach</span></td><td><span class="tx">Shorts, 60–120s how-tos, campaign films</span></td><td><span class="tx">6–8 Shorts, 1–2 long · useful, calm</span></td></tr>
+      </tbody>
+    </table>
+    <p class="note a" data-a="fade" style="--d:2.76s">English stays the primary language on all four. Regional language appears as on-screen text, ingredient names and subtitles - never as a separate handle.</p>
+  </section>
+
+  <!-- ============ SLIDE 25 · Instagram and Facebook ============ -->
+  <section class="slide s25 cream" data-duration="12750" aria-label="Slide 25: Instagram and Facebook">
+    <div class="paper"></div>
+    <p class="E eb a" data-a="track-in" style="left:181px;top:72px;--d:0.18s">INSTAGRAM AND FACEBOOK</p>
+    <h2 class="T hd lines" style="left:178px;top:110px;font-size:80px;line-height:74px;--d:0.3s">Same content core.<br>Two different cuts.</h2>
+    <div class="mock" style="left:23px;top:293px;width:423px;height:702px;--d:0.72s;--fx:-140px;--fr:-4deg"><i style="background-image:url('assets/s25-l.jpg')"></i></div>
+    <div class="mock" style="left:1500px;top:184px;width:409px;height:815px;--d:0.84s;--fx:140px;--fr:4deg"><i style="background-image:url('assets/s25-r.jpg')"></i></div>
+    <div class="pcard" style="left:448px;top:296px;width:522px;height:702px;--d:0.6s"></div>
+    <div class="pcard" style="left:984px;top:296px;width:517px;height:702px;--d:0.69s"></div>
+    <span class="logo" style="left:480px;top:328px;background-image:url('assets/s25-ig.png');--d:0.96s"></span>
+    <span class="logo" style="left:1011px;top:328px;background-image:url('assets/s25-fb.png');--d:1.05s"></span>
+    <p class="ttl lines" style="left:573px;top:328px;--d:1.02s">Instagram -<br>the designed version</p>
+    <p class="ttl lines" style="left:1103px;top:328px;--d:1.11s">Facebook -<br>the explanatory version</p>
+    <span class="ci" style="left:486px;top:442px;--d:1.32s"><svg viewBox="0 0 24 24"><path d="M9 6l10 6-10 6z"/></svg></span>
+    <div class="row" style="left:580px;top:444px;--d:1.32s"><p><b>Reels are 60% of monthly output.</b>Hook in the first 1.2 seconds, text<br>on screen for sound-off</p></div>
+    <span class="ci" style="left:486px;top:546px;--d:1.5s"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg></span>
+    <div class="row" style="left:580px;top:548px;--d:1.5s"><p><b>Every key asset ships in three ratios:</b>4:5 feed, 9:16 reel and story,<br>1:1 for cross-posting</p></div>
+    <span class="ci" style="left:486px;top:651px;--d:1.68s"><svg viewBox="0 0 24 24"><path d="M12 4C7 4 3 7.2 3 11.2c0 2.2 1.2 4.1 3.1 5.4L5.5 20l4-2c.8.2 1.6.3 2.5.3 5 0 9-3.2 9-7.2S17 4 12 4z"/><path d="M8.5 11.2h.1M12 11.2h.1M15.5 11.2h.1" stroke-width="2.6"/></svg></span>
+    <div class="row" style="left:580px;top:653px;--d:1.68s"><p><b>Stories carry the interaction:</b>polls, "which one", ritual sliders,<br>UGC reshares, three-frame demos</p></div>
+    <span class="ci" style="left:486px;top:767px;--d:1.86s"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span>
+    <div class="row" style="left:580px;top:769px;--d:1.86s"><p><b>Grid is designed as a grid -</b>the gold rule and ingredient macro<br>keep it recognisable while scrolling</p></div>
+    <span class="ci" style="left:486px;top:885px;--d:2.04s"><svg viewBox="0 0 24 24"><path d="M14.5 3.5l6 6-3 1-3.5 3.5.5 4-2 2-4-4-5 5M9.5 8.5l6 6M14.5 3.5l-1 3-3.5 3.5-4-.5-2 2 4 4"/></svg></span>
+    <div class="row" style="left:580px;top:887px;--d:2.04s"><p><b>A pinned FAQ comment on every</b><b style='display:inline'>product post,</b> so the first reply is ours</p></div>
+    <span class="ci" style="left:1016px;top:440px;--d:1.41s"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 11h6M9 14.5h6M9 18h4"/></svg></span>
+    <div class="row" style="left:1110px;top:442px;--d:1.41s"><p><b>Same assets, different caption:</b>the benefit arrives in line one,<br>not line three</p></div>
+    <span class="ci" style="left:1016px;top:543px;--d:1.59s"><svg viewBox="0 0 24 24"><path d="M4 6h13a3 3 0 010 6H6M4 12h2M8 18h12M4 18h1"/></svg></span>
+    <div class="row" style="left:1110px;top:545px;--d:1.59s"><p><b>Longer captions work here.</b>Price, pack size and where to buy<br>belong in the copy</p></div>
+    <span class="ci" style="left:1016px;top:649px;--d:1.77s"><svg viewBox="0 0 24 24"><rect x="3" y="6.5" width="12.5" height="11" rx="2"/><path d="M15.5 10.5l5-3v9l-5-3z"/></svg></span>
+    <div class="row" style="left:1110px;top:651px;--d:1.77s"><p><b>Reels cross-post at 9:16,</b>with a 4:5 static fallback for the<br>lower-bandwidth feed</p></div>
+    <span class="ci" style="left:1016px;top:759px;--d:1.95s"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.2c.8-.5 1.6-.7 2.5-.7 2.5 0 4.5 2 4.5 4.5"/></svg></span>
+    <div class="row" style="left:1110px;top:761px;--d:1.95s"><p><b>Expect the heaviest ORM load<br>and the most regional-language<br>comments</b>- this is where a response bank<br>pays for itself</p></div>
+    <span class="ci" style="left:1016px;top:905px;--d:2.13s"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+    <div class="row" style="left:1110px;top:907px;--d:2.13s"><p><b>Older audience spill is a feature,</b>not a leak: it protects the 35+ base<br>while Instagram does the acquisition</p></div>
+    <span class="footl" style="left:115px;top:1019px;width:1690px;--d:2.52s"></span>
+    <p class="footn a" data-a="fade" style="top:1032px;--d:2.7s">Adaptation between these two platforms is included in the retainer and does not count against the monthly asset minimum.</p>
+  </section>
+
+  <!-- ============ SLIDE 26 · X and YouTube ============ -->
+  <section class="slide s26 cream" data-duration="12750" aria-label="Slide 26: X and YouTube">
+    <div class="paper"></div>
+    <p class="E eb a" data-a="track-in" style="left:120px;top:49px;--d:0.18s">X AND YOUTUBE</p>
+    <h2 class="T hd lines" style="left:118px;top:86px;font-size:72px;font-weight:600;--d:0.3s">Neither of these is a resize of Instagram.</h2>
+    <div class="pcard" style="left:119px;top:186px;width:834px;height:762px;--d:0.6s"></div>
+    <div class="pcard" style="left:971px;top:186px;width:833px;height:762px;--d:0.72s"></div>
+    <span class="ic" style="left:148px;top:202px;background-image:url('assets/s26-x.png');--d:0.84s"></span>
+    <span class="bar" style="left:254px;top:218px;--d:0.96s"></span>
+    <p class="ttl a" data-a="fade-up" style="left:279px;top:213px;--d:0.96s">X - written, not designed</p>
+    <span class="ic" style="left:1005px;top:202px;--d:0.96s"><svg viewBox="0 0 82 82" width="82" height="82"><rect width="82" height="82" rx="14" fill="#FF0000"/><path d="M33 27l22 14-22 14z" fill="#fff"/></svg></span>
+    <span class="bar" style="left:1110px;top:218px;--d:1.08s"></span>
+    <p class="ttl a" data-a="fade-up" style="left:1139px;top:213px;--d:1.08s">YouTube - search and depth</p>
+    <ul class="bul" style="left:290px;top:285px;--d:1.2s"><li>70% text-only or text plus one image. Feed statics do not<br>belong here</li><li>The voice is a person who has Indian hair: hostel water, 80%<br>humidity, the 4am oil bath, the one towel</li><li>Weekly rhythm: one thread, one poll, two or three topicals,<br>the rest conversation and replies</li><li>Category POV earns the follows - "what a shampoo mask<br>actually is" is a thread, not a carousel</li><li>Service runs here in public: a visible, fast reply is the best<br>brand asset X offers</li></ul>
+    <ul class="bul" style="left:1111px;top:285px;--d:1.32s"><li>Shorts are the reach engine: 15–30s vertical, cut from the<br>same shoot but re-edited with harder hooks</li><li>Long-form 60–120s does what no other platform can: "how to<br>do an oil bath properly", "mask vs conditioner"</li><li>Titles and thumbnails are written for search - "shikakai hair<br>wash", "dandruff in Chennai humidity"</li><li>Playlists by concern and by ritual, so one film keeps earning<br>after the campaign ends</li><li>The Diwali film premieres here first, then gets cut down for<br>everywhere else</li></ul>
+    <div class="mock" style="left:9px;top:581px;width:911px;height:394px;--d:1.86s;--fy:120px"><i style="background-image:url('assets/s26-l.jpg')"></i></div>
+    <div class="mock" style="left:975px;top:589px;width:830px;height:386px;--d:2.04s;--fy:120px"><i style="background-image:url('assets/s26-r.jpg')"></i></div>
+    <span class="footl" style="left:120px;top:997px;width:1683px;--d:2.52s"></span>
+    <p class="footn a" data-a="fade" style="top:1008px;font-size:18.5px;--d:2.7s">YouTube is the only platform where Meera's content keeps working twelve months later. It is where the ingredient and ritual library should live permanently.</p>
+  </section>
+
+  <!-- ============ SLIDE 27 · Regional relevance ============ -->
+  <section class="slide s27 cream" data-duration="12750" aria-label="Slide 27: Regional relevance">
+    <div class="paper"></div>
+    <p class="E eb a" data-a="track-in" style="left:127px;top:76px;font-size:21.5px;--d:0.18s">REGIONAL RELEVANCE</p>
+    <h2 class="T hd lines" style="left:126px;top:118px;font-size:64px;--d:0.3s">English as the spine. South India as the texture.</h2>
+    <span class="vl" style="--d:0.6s"></span><span class="hl" style="--d:0.66s"></span>
+    <div class="ph" style="left:581px;top:230px;width:365px;height:345px;--d:0.9s;--r:-5deg"><i style="background-image:url('assets/s27-1.jpg')"></i></div>
+    <div class="ph" style="left:1466px;top:193px;width:364px;height:400px;--d:1.08s;--r:5deg"><i style="background-image:url('assets/s27-2.jpg')"></i></div>
+    <div class="ph" style="left:603px;top:636px;width:311px;height:328px;--d:1.26s;--r:-4deg"><i style="background-image:url('assets/s27-3.jpg')"></i></div>
+    <div class="ph" style="left:1500px;top:642px;width:313px;height:324px;--d:1.44s;--r:4deg"><i style="background-image:url('assets/s27-4.jpg')"></i></div>
+    <div class="blk fade-items" style="left:0;top:0;--d:0.78s"><span class="no" style="position:absolute;left:101px;top:247px;--i:0">01</span><h3 style="left:183px;top:262px;--i:1">Language, without<br>a second handle</h3><p class="bd" style="left:183px;top:352px;--i:2">Captions stay English. Tamil,<br>Telugu, Kannada and Malayalam<br>show up as ingredient names,<br>one-line code-mixes and on-screen<br>text. Two to three assets a month<br>carry regional-language on-screen<br>copy with English captions<br>underneath.</p></div>
+    <div class="blk fade-items" style="left:0;top:0;--d:0.96s"><span class="no" style="position:absolute;left:1013px;top:247px;--i:0">02</span><h3 style="left:1087px;top:271px;--i:1">Casting and locations</h3><p class="bd" style="left:1087px;top:330px;--i:2">Homes that read as South Indian<br>without becoming a set: brass<br>vessels, a bathroom with a bucket,<br>a courtyard. Talent across real<br>hair textures and skin tones,<br>styled like people rather than<br>models.</p></div>
+    <div class="blk fade-items" style="left:0;top:0;--d:1.14s"><span class="no" style="position:absolute;left:101px;top:649px;--i:0">03</span><h3 style="left:176px;top:667px;--i:1">A festival calendar<br>that is actually ours</h3><p class="bd" style="left:176px;top:760px;--i:2">Pongal, Tamil and Telugu New Year,<br>Varalakshmi Vratham, Onam,<br>Karthigai Deepam, Diwali. Specific<br>festivals beat generic festive wishes,<br>and they are where a heritage brand<br>has an unfair advantage.</p></div>
+    <div class="blk fade-items" style="left:0;top:0;--d:1.32s"><span class="no" style="position:absolute;left:1013px;top:649px;--i:0">04</span><h3 style="left:1087px;top:671px;--i:1">Non-negotiables</h3><p class="bd" style="left:1087px;top:728px;--i:2">Subtitles on 100% of video. Legible<br>with sound off. Ingredient names<br>never anglicised into "soapnut"<br>when kunkudukai is on the pack.<br>Nothing that treats South India<br>as a costume.</p></div>
+    <span class="footl" style="left:121px;top:990px;width:1694px;--d:2.04s"></span>
+    <p class="footn a" data-a="fade" style="left:121px;right:auto;text-align:left;top:1007px;font-size:21px;--d:2.22s">This also travels: the same assets work in North Indian and diaspora markets, where South Indian hair ritual carries curiosity rather than familiarity.</p>
+  </section>
+
+  <!-- ============ SLIDE 28 · 05 The content engine ============ -->
+  <section class="slide s03 s28" data-duration="6000" aria-label="SLIDE 28 · 05 The content engine">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:-1%;--kb-y:.6%;--kb-o:30% 60%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">05</p>
+    <h2 class="T split" style="--d:0.54s">The content engine</h2>
+    <p class="sub lines" style="--d:1.14s">Twenty-four originals a month against a twenty-asset minimum, a counting<br>method with no ambiguity in it, and a calendar you can hold us to.</p>
+  </section>
+
+  <!-- ============ SLIDE 29 · Format split ============ -->
+  <section class="slide s29" data-duration="12000" aria-label="Slide 29: Format split and how we count">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:127px;top:140px;--d:0.18s">FORMAT SPLIT AND HOW WE COUNT</p>
+    <h2 class="T hd lines" style="left:125px;top:190px;font-size:66px;--d:0.3s">24 originals a month. 20 is the floor, not the target.</h2>
+    <div class="pan dk" style="--d:0.66s"><p class="pt">The monthly split</p><table class="sp" style="--d:0.9s"><tr style="--i:0"><td>Reels and Shorts (original)<span class="barc" style="width:100%"></span></td><td><span data-count data-delay="0.96" data-dur="900">8</span></td></tr><tr style="--i:1"><td>Statics (original)<span class="barc" style="width:75%"></span></td><td><span data-count data-delay="1.05" data-dur="900">6</span></td></tr><tr style="--i:2"><td>Carousels (4–6 slides)<span class="barc" style="width:50%"></span></td><td><span data-count data-delay="1.14" data-dur="900">4</span></td></tr><tr style="--i:3"><td>UGC and creator-style<span class="barc" style="width:38%"></span></td><td><span data-count data-delay="1.23" data-dur="900">3</span></td></tr><tr style="--i:4"><td>Topicals and moment-jacks<span class="barc" style="width:38%"></span></td><td><span data-count data-delay="1.32" data-dur="900">3</span></td></tr><tr class="tot" style="--i:5"><td>Total originals</td><td><span data-count data-delay="1.56" data-dur="1200">24</span></td></tr></table><p class="pn a" data-a="fade" style="--d:1.8s">Plus 12–15 Stories frames, X text posts and all platform adaptations -<br>none of which are counted.</p></div>
+    <div class="pan lt" style="--d:0.81s"><p class="pt">The counting rules</p><ul class="bul rl" style="--d:1.2s"><li><b>One original</b> = one unique concept, shot or designed once</li><li><b>Adaptations are free.</b> Resize, re-crop and re-caption for<br>another platform are not counted - up to three per original</li><li><b>A carousel is one asset</b> regardless of slide count. Past six<br>slides it counts as two</li><li><b>A reel re-edited into a Short</b> with a new hook and title is an<br>adaptation, not a new asset</li><li><b>Stories frames are not counted</b> and are included in the<br>retainer</li><li><b>Shortfall</b> in any month rolls into the next; we do not count filler<br>to hit a number</li></ul></div>
+    <p class="tnote a" data-a="fade" style="left:127px;top:996px;--d:2.16s">Net effect: 24 originals produce roughly 70–80 published units a month across the four platforms.</p>
+  </section>
+
+  <!-- ============ SLIDE 30 · Monthly calendar ============ -->
+  <section class="slide s30" data-duration="12000" aria-label="Slide 30: Illustrative monthly calendar">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:130px;top:126px;--d:0.18s">ILLUSTRATIVE MONTHLY CALENDAR</p>
+    <h2 class="T hd lines" style="left:127px;top:176px;font-size:66px;--d:0.3s">A representative month, hero-led, every week.</h2>
+    <table class="tt" style="left:105px;top:316px;width:1710px;--d:0.66s"><colgroup><col style="width:160px"><col style="width:465px"><col style="width:355px"><col style="width:400px"><col style="width:330px"></colgroup><thead><tr><th>Week</th><th>Instagram</th><th>Facebook</th><th>X</th><th>YouTube</th></tr></thead><tbody>
+<tr><td style="--r:0;--c:0">Week 1</td><td style="--r:0;--c:1">Shampoo Mask one-step demo reel ·<br>kunkudukai carousel</td><td style="--r:0;--c:2">Demo reel cross-post, benefit-<br>led caption</td><td style="--r:0;--c:3">Thread: what a shampoo mask<br>actually is</td><td style="--r:0;--c:4">Short: the one-step wash</td></tr>
+<tr><td style="--r:1;--c:0">Week 2</td><td style="--r:1;--c:1">Smooth &amp; Shine get-ready reel · Grown<br>on Meera UGC static</td><td style="--r:1;--c:2">Reel cross-post with pack and<br>price copy</td><td style="--r:1;--c:3">Poll: Sunday oil bath, still doing<br>it?</td><td style="--r:1;--c:4">Short: the humidity test</td></tr>
+<tr><td style="--r:2;--c:0">Week 3</td><td style="--r:2;--c:1">Post-monsoon flakes carousel ·<br>chemparathi macro static</td><td style="--r:2;--c:2">Flakes carousel, longer caption</td><td style="--r:2;--c:3">Topicals plus dandruff-season<br>replies</td><td style="--r:2;--c:4">Long-form: an oil bath,<br>done properly</td></tr>
+<tr><td style="--r:3;--c:0">Week 4</td><td style="--r:3;--c:1">Humidity test reel · comments-as-<br>content static</td><td style="--r:3;--c:2">Best-of UGC compilation post</td><td style="--r:3;--c:3">Three topicals, one observation<br>thread</td><td style="--r:3;--c:4">Short: three-day hair</td></tr>
+</tbody></table>
+    <p class="tnote a" data-a="fade" style="left:130px;top:1000px;--d:2.76s">Stories run daily across all four weeks. Calendar shared by the 22nd of the previous month, two revision rounds, locked by the 28th.</p>
+  </section>
+
+  <!-- ============ SLIDE 31 · 06 Diwali ============ -->
+  <section class="slide s03 s31" data-duration="6000" aria-label="SLIDE 31 · 06 Diwali">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:1%;--kb-y:-.6%;--kb-o:70% 40%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">06</p>
+    <h2 class="T split" style="--d:0.54s">Diwali</h2>
+    <p class="sub lines" style="--d:1.14s">Herbal Hairwash Powder as hero - built on the one Diwali ritual that is<br>already, literally, a hair wash.</p>
+  </section>
+
+  <!-- ============ SLIDE 32 · Diwali campaign ============ -->
+  <section class="slide s32" data-duration="12000" aria-label="Slide 32: Diwali campaign - Before the Lights, the Oil Bath">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <canvas class="petals" data-count="9" data-colors="#e9b45a,#f3cf86,#d9963a"></canvas>
+    <p class="E eb a" data-a="track-in" style="left:100px;top:120px;--d:0.18s">DIWALI CAMPAIGN · HERBAL HAIRWASH POWDER</p>
+    <h2 class="T hd split" style="left:96px;top:160px;font-size:94px;--d:0.3s">Before the Lights, the Oil Bath</h2>
+    <span class="ins" style="--d:0.96s"></span><span class="ib" style="--d:1.38s"></span>
+    <p class="it a" data-a="fade-up" style="--d:1.44s"><b>The insight:</b> in South Indian homes Diwali doesn't start with crackers. It starts before sunrise, with an oil bath. It is the<br>one day a year an entire family does the exact thing Meera Powder was made for.</p>
+    <div class="cd l" style="left:96px;--d:1.8s"><h3>Hero film · 60s, YouTube first</h3><p>One house, 4am, three generations, one tin<br>of Meera Powder. Hot water, a protesting<br>teenager, wet hair, new clothes. Ends at the<br>doorway as the first lamp is lit. No voiceover,<br>Meera Music underneath.</p></div>
+    <div class="cd l" style="left:696px;--d:1.95s"><h3>"Oil Bath, Explained" · Shorts series</h3><p>Genuinely useful, four parts: how much oil,<br>how long to leave it, how to actually get it out,<br>and what to do about hard water. This is the<br>asset that keeps earning after Diwali.</p></div>
+    <div class="cd g" style="left:1296px;--d:2.1s"><h3>#FirstWashOfDiwali · UGC</h3><p>Ask for the one photo everyone already takes<br>and never posts: 5am, wet hair, new clothes,<br>no filter. Reposted as a grid through the<br>festival. Participation, not a prize draw.</p></div>
+    <p class="tnote a" data-a="fade" style="left:100px;top:960px;line-height:30px;--d:2.58s">On X, lean into the shared joke: nobody asked to be woken at 4am and have hot oil poured on their head. We all turned out with good hair.<br>A Golden Dhamaka-style retail mechanic can run underneath without touching the story.</p>
+  </section>
+
+  <!-- ============ SLIDE 33 · Diwali rollout ============ -->
+  <section class="slide s33" data-duration="12000" aria-label="Slide 33: Diwali rollout">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:118px;top:128px;--d:0.18s">DIWALI ROLLOUT</p>
+    <h2 class="T hd lines" style="left:116px;top:178px;font-size:70px;--d:0.3s">Four phases, each with one job.</h2>
+    <table class="tt" style="left:105px;top:310px;width:1710px;--d:0.66s"><colgroup><col style="width:220px"><col style="width:240px"><col style="width:750px"><col style="width:500px"></colgroup><thead><tr><th>Phase</th><th>Window</th><th>What runs</th><th>What we measure</th></tr></thead><tbody>
+<tr><td style="--r:0;--c:0">Tease</td><td style="--r:0;--c:1">D-21 to D-14</td><td style="--r:0;--c:2">"Oil Bath, Explained" Shorts, ingredient carousels, X thread on<br>why the ritual exists</td><td style="--r:0;--c:3">Saves, Shorts retention, search for<br>"oil bath"</td></tr>
+<tr><td style="--r:1;--c:0">Build</td><td style="--r:1;--c:1">D-14 to D-5</td><td style="--r:1;--c:2">Hero film premiere on YouTube, cut-downs to Reels and<br>Facebook, creator wave one, regional-language versions</td><td style="--r:1;--c:3">Reach, view-through, 18–34 share<br>of views</td></tr>
+<tr><td style="--r:2;--c:0">Peak</td><td style="--r:2;--c:1">D-5 to Diwali</td><td style="--r:2;--c:2">#FirstWashOfDiwali UGC call, Stories takeover, daily repost<br>grid, creator wave two, X topicals through the morning</td><td style="--r:2;--c:3">UGC volume, shares, comment<br>sentiment</td></tr>
+<tr><td style="--r:3;--c:0">Echo</td><td style="--r:3;--c:1">Diwali +1 to +7</td><td style="--r:3;--c:2">Best-of UGC film, thank-you post, gifting and retail statics,<br>powder-to-mask cross-sell</td><td style="--r:3;--c:3">Follower retention, link clicks,<br>repeat purchase signal</td></tr>
+</tbody></table>
+    <p class="tnote a" data-a="fade" style="left:118px;top:1000px;--d:2.76s">Creator waves are briefed and vetted by us where you want that support; negotiation and contracting stay with your in-house team.</p>
+  </section>
+
+  <!-- ============ SLIDE 34 · 07 How we run it ============ -->
+  <section class="slide s03 s34" data-duration="6000" aria-label="SLIDE 34 · 07 How we run it">
+    <div class="bg" data-bg="assets/s03-bg.jpg" style="--kb-scale:1.08;--kb-x:-1%;--kb-y:-.6%;--kb-o:40% 30%;--kb-dur:11s"></div>
+    <div class="rays"></div>
+    <div class="light-sweep" style="--sweep-d:1.6s"></div>
+    <canvas class="petals" data-count="8" data-colors="#fffaf0,#f4ead6,#e9dcc0"></canvas>
+    <div class="vignette"></div>
+    <p class="num a" data-a="blur-in" style="--d:0.24s;--t:1.6s">07</p>
+    <h2 class="T split" style="--d:0.54s">How we run it</h2>
+    <p class="sub lines" style="--d:1.14s">Production, creator vetting, operations and reporting - the unglamorous part<br>that decides whether any of the above actually ships every month.</p>
+  </section>
+
+  <!-- ============ SLIDE 35 · Product shoots ============ -->
+  <section class="slide s35 cream" data-duration="12000" aria-label="Slide 35: Product shoots and production">
+    <div class="paper"></div>
+    <p class="E eb a" data-a="track-in" style="left:92px;top:66px;display:flex;align-items:center;gap:24px;--d:0.18s">PRODUCT SHOOTS AND PRODUCTION</p>
+    <h2 class="T hd lines" style="left:88px;top:110px;font-size:66px;--d:0.3s">One and a half shoot days a month feeds the whole calendar.</h2>
+    <div class="kc" style="left:62px;top:213px;width:598px;height:770px;--d:0.66s"><span class="no">01</span><p class="kt">Cadence and output</p><ul class="bul" style="top:92px;--d:0.9s"><li>One full production day per month, plus<br>one half-day for UGC and creator-style<br>content</li><li>Quarterly: one two-day campaign shoot<br>for Diwali, launches and the long-form<br>library</li><li>Per full day: 6–8 reel or Short concepts,<br>10–12 statics, 2 demo films, plus a stills<br>bank</li><li>Shoot to first cut in 4 working days, final<br>in 7</li></ul><div class="ph" style="height:318px"><i style="background-image:url('assets/s35-1.jpg')"></i></div></div>
+    <div class="kc" style="left:676px;top:213px;width:582px;height:770px;--d:0.81s"><span class="no">02</span><p class="kt">Crew, talent, locations</p><ul class="bul" style="top:92px;--d:1.05s"><li>In-house: creative lead, copywriter,<br>designer, two editors</li><li>On set: director-DOP, assistant, stylist,<br>hair and make-up, on-set editor</li><li>Two talents per day across real hair<br>textures - wavy, curly, straight, short,<br>and men</li><li>A practical home in Chennai or Bengaluru<br>for ritual content; a studio day for pack<br>and claim creatives</li><li>Props: brass vessels, towels, raw shikakai<br>and hibiscus, bathroom shelf dressing</li></ul><div class="ph hard" style="height:300px"><i style="background-image:url('assets/s35-2.jpg')"></i></div></div>
+    <div class="kc" style="left:1273px;top:213px;width:593px;height:770px;--d:0.96s"><span class="no">03</span><p class="kt">What we need from you</p><ul class="bul" style="top:92px;--d:1.2s"><li>Product stock: three units per SKU per<br>shoot, delivered one week ahead</li><li>Approved claim sheet and the current<br>brand guidelines</li><li>Logo, pack and key visual files in print-<br>ready form</li><li>A single named approver for creative<br>and for claims</li><li>External support: none for business-as-<br>usual. Campaign shoots may need an<br>external DOP or equipment hire, quoted<br>per shoot</li></ul><div class="ph" style="height:312px"><i style="background-image:url('assets/s35-3.jpg')"></i></div></div>
+    <span class="footl" style="left:62px;top:1023px;width:56px;--d:2.04s"></span>
+    <p class="tnote a" data-a="fade" style="left:140px;top:1011px;font-size:20.5px;--d:2.1s">Shoot outputs count toward the 20+ monthly minimum - they are not an additional line item unless a campaign shoot is commissioned.</p>
+  </section>
+
+  <!-- ============ SLIDE 36 · Creator scouting ============ -->
+  <section class="slide s36" data-duration="11250" aria-label="Slide 36: Creator scouting and vetting">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:84px;top:120px;--d:0.18s">CREATOR SCOUTING AND VETTING · PRICED SEPARATELY</p>
+    <h2 class="T hd lines" style="left:82px;top:168px;font-size:70px;--d:0.3s">Your in-house team stays in charge. We do the groundwork.</h2>
+    <div class="kc" style="left:84px;top:290px;width:860px;height:540px;--d:0.66s"><p class="kt">What we do</p><ul class="bul" style="top:102px;--d:0.9s"><li>Brief to scored shortlist in 5 working days, 25–30 profiles per wave</li><li>Vetting: audience geography and age split, authentic-engagement<br>check, brand-safety scan across 12 months of past content,<br>competing-brand history</li><li>Rate benchmarking against category comparables, so you negotiate<br>from a number</li><li>Suggested tier mix: micro for credibility, mid-tier for reach, one or<br>two regional voices for language</li><li>Draft briefs, usage and rights recommendations, and content QC<br>against brand guidelines</li></ul></div>
+    <div class="kc" style="left:976px;top:290px;width:860px;height:540px;--d:0.81s"><p class="kt">What stays with you</p><ul class="bul" style="top:102px;--d:1.05s"><li>Negotiation, contracting and payment</li><li>Final creator selection and relationship ownership</li><li>Paid amplification decisions and media budgets</li></ul>
+      <p class="kt a" data-a="fade-up" style="top:220px;--d:1.44s">Commercials</p>
+      <p class="a" data-a="fade-up" style="position:absolute;left:38px;top:276px;font-family:var(--ui);font-size:23.5px;line-height:36px;color:#4d4b46;white-space:nowrap;--d:1.56s">Quoted separately from the social retainer: <b>[₹____] per month</b> for up to<br><b>[__]</b> waves, or <b>[₹____] per vetted shortlist</b> on an ad-hoc basis.<br>Creator fees, product seeding and paid media are not included.</p></div>
+    <p class="tnote a" data-a="fade" style="left:84px;top:1010px;--d:2.04s">Figures in brackets to be confirmed against the final scope - we would rather quote this after one conversation about wave volume than guess at it here.</p>
+  </section>
+
+  <!-- ============ SLIDE 37 · Operations ============ -->
+  <section class="slide s37" data-duration="12000" aria-label="Slide 37: Operations, approvals and ORM">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:98px;top:124px;--d:0.18s">OPERATIONS, APPROVALS AND ORM</p>
+    <h2 class="T hd lines" style="left:96px;top:172px;font-size:70px;--d:0.3s">Dates, SLAs and a single approval sheet.</h2>
+    <div class="kc" style="left:98px;top:282px;width:556px;height:656px;--d:0.66s"><p class="kt" style="left:34px">Planning and approvals</p><ul class="bul"  style="left:76px;top:98px;font-size:22.5px;--d:0.9s"><li>Next-month calendar shared by the 22nd,<br>two revision rounds, locked by the 28th</li><li>One approval sheet: copy, visual and<br>claim-check in a single view, no parallel<br>email threads</li><li>Every product asset carries a claim flag<br>pointing to the approved source line</li><li>Scheduling and publishing handled by us<br>across all four platforms</li><li>Topicals route through a 6-hour fast-track<br>with a named approver</li></ul></div>
+    <div class="kc" style="left:684px;top:282px;width:556px;height:656px;--d:0.78s"><p class="kt" style="left:34px">ORM coverage</p><ul class="bul" style="left:76px;top:96px;font-size:22.5px;line-height:32px;--d:1.02s"><li>Comments and DMs monitored Monday<br>to Saturday, 10am to 7pm, across all four<br>platforms</li><li>Response SLA: 4 working hours.<br>Approved response bank covering the<br>top 25 recurring queries</li><li>Regional-language comments handled by<br>a Tamil-speaking community manager</li><li>Escalation within 1 hour to a named client<br>contact for complaints, claim challenges,<br>adverse reactions or PR risk</li><li>Weekly sentiment and query-theme<br>summary feeds back into the next<br>calendar</li></ul></div>
+    <div class="kc dk" style="left:1270px;top:282px;width:556px;height:656px;--d:0.9s"><p class="kt" style="left:34px">Turnaround times</p><table class="ta" style="--d:1.14s"><tr style="--i:0"><td>New static</td><td><span data-count data-delay="1.26" data-dur="800">2</span> days</td></tr><tr style="--i:1"><td>Carousel</td><td><span data-count data-delay="1.35" data-dur="800">3</span> days</td></tr><tr style="--i:2"><td>Reel or Short</td><td><span data-count data-delay="1.44" data-dur="800">4</span> days</td></tr><tr style="--i:3"><td>Long-form film</td><td><span data-count data-delay="1.53" data-dur="800">7</span> days</td></tr><tr style="--i:4"><td>Topical</td><td><span data-count data-delay="1.62" data-dur="800">6</span> hours</td></tr><tr class="hot" style="--i:5"><td>Crisis copy</td><td><span data-count data-delay="1.71" data-dur="800">2</span> hours</td></tr></table><p class="tn a" data-a="fade" style="--d:1.92s">Measured from approved brief to first<br>submission, excluding client review time.</p></div>
+    <p class="tnote a" data-a="fade" style="left:98px;top:1004px;--d:2.16s">Bracketed working hours and SLAs are our proposal and are open to adjustment against your internal review cycles.</p>
+  </section>
+
+  <!-- ============ SLIDE 38 · KPIs ============ -->
+  <section class="slide s38" data-duration="12000" aria-label="Slide 38: KPIs and reporting">
+    <div class="bg" data-bg="assets/s04-bg.jpg" style="--kb-scale:1.04;--kb-x:0%;--kb-y:0%;--kb-o:0% 50%;--kb-dur:17s"></div>
+    <div class="vignette" style="opacity:.3"></div>
+    <p class="E eb a" data-a="track-in" style="left:92px;top:118px;--d:0.18s">KPIS AND REPORTING</p>
+    <h2 class="T hd lines" style="left:90px;top:166px;font-size:72px;--d:0.3s">What we hold ourselves to.</h2>
+    <table class="tt kp" style="left:92px;top:296px;width:1736px;--d:0.66s"><colgroup><col style="width:380px"><col style="width:460px"><col style="width:470px"><col></colgroup><thead><tr><th>Objective</th><th>Primary KPI</th><th>Secondary</th><th>Direction</th></tr></thead><tbody>
+<tr><td style="--r:0;--c:0">Relevance among 18–34</td><td style="--r:0;--c:1">18–34 share of total reach</td><td style="--r:0;--c:2">Follower growth, profile visits, age mix<br>of engagers</td><td style="--r:0;--c:3" class="dir">From [__]% to [__]% in 6 months</td></tr>
+<tr><td style="--r:1;--c:0">Content quality</td><td style="--r:1;--c:1">Saves and shares per asset</td><td style="--r:1;--c:2">Engagement rate on reach, comment<br>sentiment</td><td style="--r:1;--c:3" class="dir">Saves lead, not likes</td></tr>
+<tr><td style="--r:2;--c:0">Video efficiency</td><td style="--r:2;--c:1">3-second view-through rate</td><td style="--r:2;--c:2">Average watch time, Shorts swipe-<br>away point</td><td style="--r:2;--c:3" class="dir">Top-quartile hooks reused monthly</td></tr>
+<tr><td style="--r:3;--c:0">Consideration</td><td style="--r:3;--c:1">Clicks to cavinkart and marketplace<br>listings</td><td style="--r:3;--c:2">Branded search lift, "shampoo mask"<br>search volume</td><td style="--r:3;--c:3" class="dir">Category term owned by Meera</td></tr>
+<tr><td style="--r:4;--c:0">Community health</td><td style="--r:4;--c:1">Response rate and response time</td><td style="--r:4;--c:2">UGC volume, DM volume, unprompted<br>mentions</td><td style="--r:4;--c:3" class="dir">95%+ response within SLA</td></tr>
+</tbody></table>
+    <p class="tnote a" data-a="fade" style="left:92px;top:960px;line-height:31px;--d:2.76s">Monthly report: performance, learnings and three specific recommendations. Weekly one-page pulse during campaigns.<br>Quarterly content audit with the pillar mix re-weighted against results.</p>
+  </section>
+
+  <!-- ============ SLIDE 39 · Thank you ============ -->
+  <section class="slide s39" data-duration="9000" aria-label="Slide 39: Thank you">
+    <div class="bg" data-bg="assets/s01-bg.jpg" style="--kb-scale:1.08;--kb-x:-1.2%;--kb-y:-.4%;--kb-dur:14s"></div>
+    <div class="shade"></div>
+    <div class="light-sweep" style="--sweep-d:2.4s"></div>
+    <canvas class="petals" data-count="14"></canvas>
+    <div class="vignette"></div>
+    <p class="E eyebrow shimmer" style="--d:0.3s">MEERA &nbsp;·&nbsp; SOCIAL MEDIA PITCH &nbsp;·&nbsp; OCTOBER 2026</p>
+    <h1 class="T title split" style="--d:0.54s">Thank you.</h1>
+    <p class="tag lines" style="--d:1.2s">Let’s make a 27-year-old brand<br>feel 24.</p>
+  </section>
+
+</main>
+</div>
+
+<nav id="ui" aria-label="Presentation controls">
+  <button id="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15.5 4 7.5 12l8 8 1.4-1.4L10.3 12l6.6-6.6z"/></svg></button>
+  <button id="play" aria-label="Pause"><svg class="ico-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg><svg class="ico-pause" viewBox="0 0 24 24"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg></button>
+  <button id="next" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="m8.5 4-1.4 1.4 6.6 6.6-6.6 6.6L8.5 20l8-8z"/></svg></button>
+  <span id="counter">01 / 01</span>
+  <div id="bar" role="progressbar" aria-label="Progress"><b></b><i></i></div>
+  <button id="fs" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4zm10 0h6v6h-2V6h-4zM4 14h2v4h4v2H4zm14 0h2v6h-6v-2h4z"/></svg></button>
+</nav>
+
+<script src="deck.js"></script>
+</body>
+</html>
